@@ -135,7 +135,7 @@ proches de $\omega_0$ et on agrandit les intervalles lorsqu’on s’en éloigne
 
     Voici le diagramme de Black expérimental : 
     \begin{center}
-        \includegraphics{Diagramme de Black experimental 2.1 Syst 2.png}
+        \includegraphics{Diagramme de Black experimental_syst2.png}
     \end{center}
     On remarque que ce diagramme a l'allure d'un passe-bas du $2^{\grave{e}me}$ ordre ($A > 0$, $\varphi \in [0^\circ,-180^\circ]$ et résonance).
     \\Graphiquement, la marge de phase vaut $-130 - (-180) = 50^\circ$.
@@ -151,13 +151,113 @@ proches de $\omega_0$ et on agrandit les intervalles lorsqu’on s’en éloigne
     droite passant par l'origine, dans une zone linéaire la pente de cette droite est
     l'amplification statique du système.
 
-    \item \underline{\itshape Système du $1^{er}$ ordre} : Soit la fonction de transfert de $1^{er}$ ordre $F_1(p) = \frac{A}{1 + \tau p }$. Ici A représente le gain/l'amplification statique et $\tau$ représente la constante de temps (en secondes) du système.
+    \item \underline{\itshape Système du $1^{er}$ ordre} : Soit la fonction de transfert du $1^{er}$ ordre $F_1(p) = \frac{A}{1 + \tau p }$. Ici A représente le gain/l'amplification statique et $\tau$ représente la constante de temps (en secondes) du système.
     Pour représenter la réponse indicielle, nous savons que pour une entrée $e(t) = X_0\times\mathcal{U}(t)$, la réponse est de la forme $y(t) = AX_0(1-e^{\frac{-t}{\tau}})\mathcal{U}(t)$ avec $A$ et $\tau$ les éléments caractéristiques de $F_1(p)$.
-    Ici, lessai indiciel est modélisé avec A = 2, $X_0 = 1$ et $\tau = 0.2$s
+    Ici, l'essai indiciel est modélisé avec A = 2, $X_0 = 1$ et $\tau = 0.2$s
     \begin{center}
         \includegraphics{Reponse_indicielle_prem_ordre.png}
     \end{center}
+    Pour retrouver A: on fait le rapport entre l'allure de la sortie et l'allure de l'entrée en régime permanent.Pour retrouver $\tau$ : on mesure le temps de réponse à 5 $t_{r5\%}$(temps que met la sortie pour atteindre 95$\%$ 
+    de sa valeur finale et y rester) et on retrouve $\tau$ grâce à la formule $t_{r5\%} = 3\tau$ (valable pour les systèmes du $1^{er}$ ordre).
 
+    \textit{Fréquence d'observation}: pour bien observer l'allure de la sortie lorsqu'on fait un essai indiciel il faut choisir la bonne fréquence pour le signal carré d'entrée.
+    \\ On doit pouvoir observer le régime transitoire et le régime permanent : si la fréquence est trop élevée on ne verra que le régime transitoire (régime permanent jamais atteint : bascule haut/bas trop
+rapide) et si la fréquence est trop faible on ne verra pas le régime transitoire (il sera "écrasé" par le régime permanent). On doit donc prendre un demi-période de sorte à ce que la fréquence soit inférieure à $\frac{1}{3} \times f_0$ (car $t_{r5\%} = 3\tau$) mais pas trop pour observer le régime transitoire.
+\\\\Lors d'un essai harmnonique, il suffit de mesurer la rapport de l'amplitude de la sortie sur celle de l'entrée à fréquence très basse comme ce système est un passe-bas du $1^{er}$ ordre. Pour déterminer $\tau$, on sait que à $\omega_0$, le déphasage $\varphi$ vaut $-45^\circ$. Ainsi en trouvant $\omega_0$, on trouve $\tau$ car $\omega_0 = \frac{1}{\tau}$.
 
+\item \underline{\itshape Système du $2^{\grave{e}me}$ ordre} : Soit la fonctionde transfert du $2^{\grave{e}me}$ ordre  $F_2(p) = \frac{A}{1 + 2m\frac{p}{\omega_0} + (\frac{p}{\omega_0})^2}$. 
 \end{itemize}
+Ici, A  représente le gain/l'amplification statique, m le coefficient d'amortissement du système et $\omega_0$ la pulsation de coupure du système.
+Pour représenter la réponse indicielle, d'après le cours, nous savons que pour une entrée $e(t) = X_0\times\mathcal{U}(t)$, la réponse est de la forme  :
+
+\begin{center}
+    $y(t) = AX_0(1+A_1e^{p_1t} + A_2e^{p_2t})\mathcal{U}(t)$ 
+\end{center}    
+Avec $p_1$ et $p_2$ les pôles de la fonction de transfert, i.e. les racines du polynôme en p du dénominateur.
+D'après le cours, si m $\ge 1$, alors $p_1 = \omega_0(-m+\sqrt{m^2-1})$ et $p_2 = \omega_0(-m-\sqrt{m^2-1})$. 
+\\Et, de plus : $A_1 = \frac{\omega_0^2}{p_1(p_1-p_2)}$ et $A_2 = \frac{\omega_0^2}{p_2(p_2-p_1)}$.
+Ainsi, pour A = 2, $X_0 = 1$ et $\omega_0 = 10$rad/s, on obtient le graphe suivant :
+\begin{center}
+    \includegraphics{Reponse_indicelle_m_sup_1.png}
+\end{center}
+
+On observe bien aussi la tangente nulle à l'origine, typique d'un système du deuxième ordre.
+
+Pour $0\le m \le 1$, alors $p_1$ et $p_2$ sont complexes conjugués, i.e. $p_1 = \omega_0(-m+j\sqrt{1-m^2})$ et $p_2 = \omega_0(-m-j\sqrt{1-m^2})$.
+On pose alors $p_1 = \alpha+j\beta$ et $p_2 = \alpha-j\beta$. Enfin, d'après le cours, on obtient : 
+\begin{center}
+    $y(t) = AX_0(1+2A_1e^{\alpha t}\cos(\beta t + \theta))\mathcal{U}(t)$
+\end{center}
+Avec $A_1 = |\underline{A_1}|$ car comme $p_1$ et $p_2$ sont des complexes, $\underline{A_1}$ l'est aussi.
+On sait que : 
+\begin{center}
+ $\underline{A_1} = \frac{\omega_0^2}{\underline{p_1}(\underline{p_1} - \underline{p_2})} = \frac{\omega_0}{(\alpha + j\beta)(2j\beta)} = \frac{\omega_0}{2j\beta\alpha -2\beta^2}$
+\\Il vient alors $A_1 = |\underline{A_1}| = \frac{\omega_0^2}{\sqrt{(-\beta^2)^2 + (2\beta\alpha)^2}}$
+\\Après calcul, $\theta = \arg(\underline{A_1}) = \arctan(\frac{\Im(\underline{A_1})}{\Re(\underline{A_1})}) - \pi = \dots = \arctan(\frac{\alpha}{\beta^3}) - \pi$
+\end{center}
+On peut désormais tracer la réponse indicielle d'un système du deuxième ordre avec $m \in \left]0;1\right[$, $A = 2$, $\omega_0 = 10$rad/s, $X_0 = 1$  :
+\begin{center}
+    \includegraphics{Reponse_indicielle_m_inf_1.png}
+\end{center}
+\textit{Méthode de détermination des éléments caractéristiques :} On applique un signal carré en entrée, et on observe la réponse indicielle. 
+\\Ensuite on mesure le $1^{er}$ dépassement (en $\%$ ) et on utilise l'abaque qui nous permet de relier le pourcentage du premier dépassement au coefficient d'amortissement.
+\\Enfin, grâce à un deuxième abaque, on peut récupérer le temps de réponse réduit ($t_{r5\%}\omega_0$) avec le coefficent d'amortissement. Comme la pulsation de coupure est connue, on peut récupérer le temps de réponse à 5 $\%$.
+\\\\$\underline{F_2}(j\omega_0) = \frac{A}{1 + 2m\frac{j\omega_0}{\omega_0} + (\frac{j\omega_0}{\omega_0})^2} = \frac{A}{2jm}$
+\begin{itemize}
+    \item $|\underline{F_2}(j\omega_0)| = \frac{A}{2m}$
+    \item $\arg(\underline{F_2}(j\omega_0)) = -90^\circ$
+\end{itemize}
+Grâce à ces résultats, on peut extraire une méthode pour trouver $m$ et $\omega_0$ lors d'un essai harmonique: 
+Faire varier la fréquence jusqu'à obtenir un déphasage de $-90^\circ$. Alors la fréquence qui correspond à ce déphasage est la fréquence de coupure $f_0$. 
+\\Donc $\omega_0 = 2\pi f_0$. De plus, on sait qu'à la pulsation de coupure, l'amplification vaut $\frac{A}{2m}$. Il suffit de mesurer $\frac{S}{E}$ à cette pulsation et on peut en déduire m :
+\begin{center}
+    $\frac{S}{E} = \frac{A}{2m} \Leftrightarrow m = \frac{A}{2}\times \frac{1}{\frac{S}{E}}$
+\end{center}
+
+\subsection{\itshape Travail expérimental}
+
+\subsubsection{\underline{\textit{Tracé de la caractéristique statique} }}
+Comme dit dans l'énoncé de TP, nous appliquons un signal carré de très faible fréquence(500mHz) et on mesure la sortie  lorsque celle-ci atteint son régime permanent pour plusieurs valeurs d'entrée : 
+
+\begin{itemize}
+    \item Système 1
+\end{itemize}
+\begin{center}
+    \begin{tabular}{ |p{3cm}|p{3cm}|}
+
+        \hline
+        Amplitude d'entrée (V) & Amplitude de sortie (V)\\
+        \hline
+        -9.25 & -12.4 \\
+        -8.25 & -12.6\\
+        -7.25 & -12.4  \\
+        -6.25 & -10.9 \\
+        -5.25 & -9  \\
+        -4.2 & -7.4  \\
+        -3.15 & -5.5\\
+        -2.05& -3.65  \\
+        -2 & -3.65\\
+        -1.55 & -2.75 \\
+        0.95 & 2.72 \\
+        1.45 & 3.60 \\
+        2 & 3.65 \\
+        2.95 & 5.5 \\
+        3.95 & 7.325  \\
+        4.875 & 9  \\
+        5.8 & 10.9  \\
+        7 & 12.8  \\
+        7.87 & 12.8  \\
+        9 & 12.8  \\
+        
+        \hline
+        \end{tabular}
+    \end{center}
+
+    Et voici le tracé de la caractéristique statique :
+    \begin{center}
+        \includegraphics{Carac_stat_1.png}
+    \end{center} 
+    Grâce à cette caractéristique statique, on peut mesurer l'amplification statique, qui est la pente de la droite dans le domaine de linéarité ($D = \left[-7.4;7.3\right]$), qui est délimité par les pointillés en vert. On voit clairement sur le graphe que $A=2$.
+    \\
+
 \end{document}
