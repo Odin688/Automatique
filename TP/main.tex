@@ -93,7 +93,7 @@ On remarque que ce diagramme a l'allure d'un passe-bas du $1^{er}$ ordre ($A > 0
     \item Système 2
 \end{itemize}
 
-\underline{Nature du système} : De même que pour le système 1, à fréquences très basse ($f \ approx 10$Hz), l'amplitude de la sortie est amplifiée, et pour des fréquences très élevées, l'amplitude de la sortie est quasiment nulle.
+\underline{Nature du système} : De même que pour le système 1, à fréquences très basse ($f \approx 10$Hz), l'amplitude de la sortie est amplifiée, et pour des fréquences très élevées, l'amplitude de la sortie est quasiment nulle.
 \\De plus, on remarque que pour $f = 5$Hz, le quotient de l'amplitude de la sortie (S) sur celle de l'entrée est supérieur ($\frac{S}{E} = 2.26$) que pour $f = 1$Hz ($\frac{S}{E} = 2$). On interpète ceci comme étant une résonance du système autour de la fréquence 5 Hertz.
 Ainsi le système 2 est un passe-bas du $2^{\grave{e}  me}$ ordre. Pour déterminer la fréquence de coupure, nous savons qu'à cette fréquence, pour un filtre passe-bas du $2^{\grave{e}me}$ ordre, le déphasage vaut $-90^\circ$ ($A = 2 > 0$). Ainsi, on trouve $f_0 \approx 7.57$Hz donc $\omega_0 \approx 47.5$Hz.
 
@@ -165,7 +165,7 @@ proches de $\omega_0$ et on agrandit les intervalles lorsqu’on s’en éloigne
 rapide) et si la fréquence est trop faible on ne verra pas le régime transitoire (il sera "écrasé" par le régime permanent). On doit donc prendre un demi-période de sorte à ce que la fréquence soit inférieure à $\frac{1}{3} \times f_0$ (car $t_{r5\%} = 3\tau$) mais pas trop pour observer le régime transitoire.
 \\\\Lors d'un essai harmnonique, il suffit de mesurer la rapport de l'amplitude de la sortie sur celle de l'entrée à fréquence très basse comme ce système est un passe-bas du $1^{er}$ ordre. Pour déterminer $\tau$, on sait que à $\omega_0$, le déphasage $\varphi$ vaut $-45^\circ$. Ainsi en trouvant $\omega_0$, on trouve $\tau$ car $\omega_0 = \frac{1}{\tau}$.
 
-\item \underline{\itshape Système du $2^{\grave{e}me}$ ordre} : Soit la fonctionde transfert du $2^{\grave{e}me}$ ordre  $F_2(p) = \frac{A}{1 + 2m\frac{p}{\omega_0} + (\frac{p}{\omega_0})^2}$. 
+\item \underline{\itshape Système du $2^{\grave{e}me}$ ordre} : Soit la fonction de transfert du $2^{\grave{e}me}$ ordre  $F_2(p) = \frac{A}{1 + 2m\frac{p}{\omega_0} + (\frac{p}{\omega_0})^2}$. 
 \end{itemize}
 Ici, A  représente le gain/l'amplification statique, m le coefficient d'amortissement du système et $\omega_0$ la pulsation de coupure du système.
 Pour représenter la réponse indicielle, d'après le cours, nous savons que pour une entrée $e(t) = X_0\times\mathcal{U}(t)$, la réponse est de la forme  :
@@ -257,7 +257,71 @@ Comme dit dans l'énoncé de TP, nous appliquons un signal carré de très faibl
     \begin{center}
         \includegraphics{Carac_stat_1.png}
     \end{center} 
-    Grâce à cette caractéristique statique, on peut mesurer l'amplification statique, qui est la pente de la droite dans le domaine de linéarité ($D = \left[-7.4;7.3\right]$), qui est délimité par les pointillés en vert. On voit clairement sur le graphe que $A=2$.
-    \\
+    Grâce à cette caractéristique statique, on peut mesurer l'amplification statique, qui est la pente de \\la droite dans le domaine de linéarité ($D = \left[-7.4;7.3\right]$), qui est délimité par les pointillés en vert. On voit clairement sur le graphe que $A\approx1.8$, ce qui confirme nos résultats précédents.
+    \\On peut confirmer ceci en calculant le coefficient directeur entre les points $(2.95,5.5)$ et  $(-2,-3.65)$. Ainsi $A = \frac{5.5-(-3.65)}{2.95-(-2)} = 1.84 \approx 1.8$.
+    \\De plus, on peut expliquer le domaine de linéarité par le fait que les composants du système 1 (Amplificateurs opérationnels) on une tension $V_{sat}$ de saturation maximale. Si on met en entrée une tension trop élevée, l'AOP ne pourra pas l'amplifier assez vite et la sortie ne pourra pas dépasser $V_{sat}$.
+\begin{itemize}
+    \item Système 2
+\end{itemize}
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|c|}
 
+    \hline
+    Amplitude d'entrée (V) & -8.3&-6.25&-5.2&-4.2&-2&-1&1&1.9&3.75&4.8&5.75&7.93\\
+    \hline
+    Amplitude de sortie (V) & -12.4&-12&-10&-8&-4&-1.53&1.475&4&8&10&12&12.8\\
+    \hline
+    \end{tabular}
+\end{center}
+Et voici le tracé de la carctéristique statique : 
+
+\begin{center}
+    \includegraphics{Carac_stat_2.png}
+\end{center}
+Grâce à cette caractéristique statique, on peut mesurer l'amplification statique, qui est la pente de \\la droite dans le domaine de linéarité ($D = \left[-6.25;6\right]$), qui est délimité par les pointillés en vert. On voit clairement sur le graphe que $A\approx2$, ce qui confirme nos résultats précédents.
+\\On peut confirmer ceci en calculant le coefficient directeur entre les points $(4.8;10)$ et  $(-6.25,-12)$. Ainsi $A = \frac{10-(-12)}{4.8-(-6.25)} = 1.99 \approx 2$. Le domaine de linéarité est expliqué par les mêmes raisons que pour le système 1.
+\newpage
+\subsubsection{\underline{\itshape Identification}:}
+\begin{itemize}
+    \item Système 1
+\end{itemize}
+\textit{\underline{Essai indiciel:}} On applique un signal carré de fréquence 1Hz et d'amplitude 1V pour mesurer l'amplification statique et un signal carré de fréquence 15Hz de façon à observer à la fois le régime transitoire et le régime permanent, voici ce que l'on obtient :
+\begin{center}
+    \includegraphics[width = 17 cm, height = 10cm]{Ampli_statique__syst_1.png}
+    \includegraphics[width = 17 cm, height = 10cm]{tr5prct_syst_1_indiciel.png}
+\end{center}
+
+\begin{itemize}
+    \item A : D'après le la première capture et des curseurs, avec $V_s$ en vert et $V_e$ en orange on a :
+    \\$A = \frac{\Delta S}{\Delta E} = \frac{1.81}{1} = 1.81$ qui correspond à la valeur que nous avons trouvée grâce à la carctéristique statique.
+    \item $\tau$ : D'après la seconde capture, le temps de réponse à 5 $\%$ est de 64ms (voir $\Delta X$ dans l'onglet "Curseurs"). 
+    \\Or comme le système étudié est d'ordre 1, alors on sait aussi que :
+    \\$t_{r5\%} = 3\tau \Leftrightarrow \tau = \frac{t_{r5\%}}{3} = \frac{64}{3} = 21.3$ms.
+\end{itemize}
+\begin{center}
+Ainsi on a \fbox{$F_1(p) = \frac{1.81}{1+0.0213p}$}
+
+\end{center}
+
+\underline{\itshape Essai harmonique:} Similairement à la section 2.2, on retrouve A à très basse fréquence en faisant l'opération suivante : $A = \frac{\Delta S}{\Delta E} = 1.79 \approx 1.81$ qui est la même valeur qu'à l'essai indiciel.
+De plus, à un déphasage $\varphi$ de $-45^\circ$, on trouve la pulsation de coupure $f_0 = 7.5$Hz donc $\omega_0 = 2\pi f_0 = 47.12$ rad/s or $\tau = \frac{1}{\omega_0} = 0.0212$s qui correspond à la valeur de $\tau$ trouvée grâce à l'essai indiciel.
+
+\begin{itemize}
+    \item Système 2
+\end{itemize}
+\underline{\itshape Essai indiciel:} On applique un signal carré de fréquence 2Hz et d'amplitude 1V pour observer le régime transitoire et le régime permanent. On mesure ensuite l'amplitude du premier dépassement: 
+\begin{center}
+    \includegraphics[width = 17cm, height = 11 cm]{Depassement_syst_2.png}
+\end{center}
+On observe donc que le premier dépassement dépasse de 15.7$\%$ la valeur finale. Il suffit ensuite d'utiliser l'abaque qui relie l'amplitude du premier dépassement au coefficient d'amortissement. Nous trouvons \fbox{$m = 0.5$}.
+De plus avec le deuxième abaque et le temps de réponse à 5$\%$ (deuxième capture d'écran, $t_{r5\%} = 112$ms), on récupère le temps de réponse à 5$\%$ réduit :
+\\ $t_{r5\%}\omega_0 = 5 \Leftrightarrow $ \fbox{$\omega_0 = \frac{5}{112.10^{-3}} = 44.6$ rad/s}.
+\begin{center}
+    Ainsi on a \fbox{$F_2(p) = \frac{2}{1 + \frac{p}{44.6} + (\frac{p}{44.6})^2}$}.
+
+\end{center}
+
+\underline{\itshape Essai harmonique:} Similairement à la section 2.2, on retrouve A à très basse fréquence en effectuant l'opération suivante :
+\\$A = \frac{\Delta S}{\Delta E} = 2.008 \approx 2$ qui est la même valeur qu'à l'essai indiciel. De plus, à un déphasage $\varphi$ de $-90^\circ$, on trouve la pulsation de coupure $f_0 = 7.57$Hz, donc $\omega_0 = 2\pi f_0 = 47.4$ rad/s.
+Mais on sait aussi qu'à $\omega_0$, $\frac{S}{E} = \frac{A}{2m}$ or $\frac{S}{E} = 2$ à $\omega_0$ donc finalement, on obtient $1 = \frac{1}{2m} \Leftrightarrow m = 0.5$ ce qui confirme nos résultats suite à l'essai indiciel.
 \end{document}
