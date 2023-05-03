@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.5)  22 APR 2023 21:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.5)  3 MAY 2023 11:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -326,13 +326,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--53
  []
 
 [2]
-<TP1/Syst_1/Diagramme de Black experimental 2.1.png, id=64, 414.8298pt x 328.1058pt>
+<TP1/Syst_1/Diagramme de Black experimental 2.1.png, id=72, 414.8298pt x 328.1058pt>
 File: TP1/Syst_1/Diagramme de Black experimental 2.1.png Graphic file (type png)
 <use TP1/Syst_1/Diagramme de Black experimental 2.1.png>
 Package pdftex.def Info: TP1/Syst_1/Diagramme de Black experimental 2.1.png  used on input line 83.
 (pdftex.def)             Requested size: 414.82878pt x 328.105pt.
  [3 <./TP1/Syst_1/Diagramme de Black experimental 2.1.png>] [4]
-<TP1/Syst_2/Diagramme de Black experimental_syst2.png, id=75, 414.8298pt x 328.1058pt>
+<TP1/Syst_2/Diagramme de Black experimental_syst2.png, id=83, 414.8298pt x 328.1058pt>
 File: TP1/Syst_2/Diagramme de Black experimental_syst2.png Graphic file (type png)
 <use TP1/Syst_2/Diagramme de Black experimental_syst2.png>
 Package pdftex.def Info: TP1/Syst_2/Diagramme de Black experimental_syst2.png  used on input line 138.
@@ -342,7 +342,7 @@ Overfull \hbox (1.5112pt too wide) in paragraph at lines 143--143
 []\T1/cmr/bx/it/17.28 Réponse in-di-cielle.Réponse Har-monique.Identification 
  []
 
-<TP1/Syst_1/Reponse_indicielle_prem_ordre.png, id=81, 432.1746pt x 298.4751pt>
+<TP1/Syst_1/Reponse_indicielle_prem_ordre.png, id=89, 432.1746pt x 298.4751pt>
 File: TP1/Syst_1/Reponse_indicielle_prem_ordre.png Graphic file (type png)
 <use TP1/Syst_1/Reponse_indicielle_prem_ordre.png>
 Package pdftex.def Info: TP1/Syst_1/Reponse_indicielle_prem_ordre.png  used on input line 158.
@@ -373,13 +373,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 163--168
  []
 
 [6 <./TP1/Syst_1/Reponse_indicielle_prem_ordre.png>]
-<TP1/Syst_2/Reponse_indicelle_m_sup_1.png, id=91, 424.2249pt x 328.1058pt>
+<TP1/Syst_2/Reponse_indicelle_m_sup_1.png, id=99, 424.2249pt x 328.1058pt>
 File: TP1/Syst_2/Reponse_indicelle_m_sup_1.png Graphic file (type png)
 <use TP1/Syst_2/Reponse_indicelle_m_sup_1.png>
 Package pdftex.def Info: TP1/Syst_2/Reponse_indicelle_m_sup_1.png  used on input line 181.
 (pdftex.def)             Requested size: 424.22385pt x 328.105pt.
  [7]
-<TP1/Syst_2/Reponse_indicielle_m_inf_1.png, id=98, 412.6617pt x 328.1058pt>
+<TP1/Syst_2/Reponse_indicielle_m_inf_1.png, id=106, 412.6617pt x 328.1058pt>
 File: TP1/Syst_2/Reponse_indicielle_m_inf_1.png Graphic file (type png)
 <use TP1/Syst_2/Reponse_indicielle_m_inf_1.png>
 Package pdftex.def Info: TP1/Syst_2/Reponse_indicielle_m_inf_1.png  used on input line 200.
@@ -423,7 +423,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 231--232
 []\T1/cmr/m/n/12 Amplitude de
  []
 
-<TP1/Syst_1/Carac_stat_1.png, id=109, 426.393pt x 328.1058pt>
+<TP1/Syst_1/Carac_stat_1.png, id=117, 426.393pt x 328.1058pt>
 File: TP1/Syst_1/Carac_stat_1.png Graphic file (type png)
 <use TP1/Syst_1/Carac_stat_1.png>
 Package pdftex.def Info: TP1/Syst_1/Carac_stat_1.png  used on input line 260.
@@ -433,7 +433,7 @@ Overfull \hbox (21.03926pt too wide) in paragraph at lines 270--278
  [] 
  []
 
-<TP1/Syst_2/Carac_stat_2.png, id=119, 426.393pt x 328.1058pt>
+<TP1/Syst_2/Carac_stat_2.png, id=127, 426.393pt x 328.1058pt>
 File: TP1/Syst_2/Carac_stat_2.png Graphic file (type png)
 <use TP1/Syst_2/Carac_stat_2.png>
 Package pdftex.def Info: TP1/Syst_2/Carac_stat_2.png  used on input line 282.
@@ -463,44 +463,50 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 287.
 
-<TP1/Syst_1/Ampli_statique__syst_1.png, id=125, 803.0pt x 504.88625pt>
+<TP1/Syst_1/Ampli_statique__syst_1.png, id=133, 803.0pt x 504.88625pt>
 File: TP1/Syst_1/Ampli_statique__syst_1.png Graphic file (type png)
 <use TP1/Syst_1/Ampli_statique__syst_1.png>
 Package pdftex.def Info: TP1/Syst_1/Ampli_statique__syst_1.png  used on input line 293.
 (pdftex.def)             Requested size: 483.7029pt x 284.52937pt.
-<TP1/Syst_1/tr5prct_syst_1_indiciel.png, id=126, 803.0pt x 504.88625pt>
+<TP1/Syst_1/tr5prct_syst_1_indiciel.png, id=134, 803.0pt x 504.88625pt>
 File: TP1/Syst_1/tr5prct_syst_1_indiciel.png Graphic file (type png)
 <use TP1/Syst_1/tr5prct_syst_1_indiciel.png>
 Package pdftex.def Info: TP1/Syst_1/tr5prct_syst_1_indiciel.png  used on input line 294.
 (pdftex.def)             Requested size: 483.7029pt x 284.52937pt.
 [13 <./TP1/Syst_1/Ampli_statique__syst_1.png (PNG copy)> <./TP1/Syst_1/tr5prct_syst_1_indiciel.png (PNG copy)>]
-<TP1/Syst_2/Depassement_syst_2.png, id=132, 803.0pt x 504.88625pt>
+<TP1/Syst_2/Depassement_syst_2.png, id=140, 803.0pt x 504.88625pt>
 File: TP1/Syst_2/Depassement_syst_2.png Graphic file (type png)
 <use TP1/Syst_2/Depassement_syst_2.png>
 Package pdftex.def Info: TP1/Syst_2/Depassement_syst_2.png  used on input line 318.
 (pdftex.def)             Requested size: 483.7029pt x 312.98pt.
-<TP1/Syst_2/13_04_23_tr5prct_2.png, id=133, 803.0pt x 504.88625pt>
+<TP1/Syst_2/13_04_23_tr5prct_2.png, id=141, 803.0pt x 504.88625pt>
 File: TP1/Syst_2/13_04_23_tr5prct_2.png Graphic file (type png)
 <use TP1/Syst_2/13_04_23_tr5prct_2.png>
 Package pdftex.def Info: TP1/Syst_2/13_04_23_tr5prct_2.png  used on input line 319.
 (pdftex.def)             Requested size: 483.7029pt x 312.98pt.
- [14 <./TP1/Syst_2/Depassement_syst_2.png (PNG copy)>] [15 <./TP1/Syst_2/13_04_23_tr5prct_2.png (PNG copy)>] (./main.aux)
+ [14 <./TP1/Syst_2/Depassement_syst_2.png (PNG copy)>] [15 <./TP1/Syst_2/13_04_23_tr5prct_2.png (PNG copy)>]
+<TP2 Simulink/syst_a_asservir.png, id=150, 243.91125pt x 67.452pt>
+File: TP2 Simulink/syst_a_asservir.png Graphic file (type png)
+<use TP2 Simulink/syst_a_asservir.png>
+Package pdftex.def Info: TP2 Simulink/syst_a_asservir.png  used on input line 348.
+(pdftex.def)             Requested size: 243.91064pt x 67.45183pt.
+ [16 <./TP2 Simulink/syst_a_asservir.png>] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 78411377660A54A131EBE546C02067EF;1624.
+(rerunfilecheck)             Checksum: 51D36C89F1C4A5FF5633ECD12864BDCE;2029.
  ) 
 Here is how much of TeX's memory you used:
- 9814 strings out of 476017
- 153924 string characters out of 5793767
+ 9827 strings out of 476017
+ 154238 string characters out of 5793767
  1872660 words of memory out of 5000000
- 30105 multiletter control sequences out of 15000+600000
+ 30113 multiletter control sequences out of 15000+600000
  531780 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,76p,561b,526s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi2074.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on main.pdf (15 pages, 618687 bytes).
+Output written on main.pdf (16 pages, 624429 bytes).
 PDF statistics:
- 234 PDF objects out of 1000 (max. 8388607)
- 158 compressed objects within 2 object streams
- 25 named destinations out of 1000 (max. 500000)
- 128 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 248 PDF objects out of 1000 (max. 8388607)
+ 169 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 500000)
+ 149 words of extra memory for PDF output out of 10000 (max. 10000000)
 
