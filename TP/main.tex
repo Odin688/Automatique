@@ -339,12 +339,68 @@ Nous avons désormais identifié les mesuré les éléments caractéristiques de
 
 \subsection{\itshape Travail Préparatoire}
 
+On désire asservir le système suivant : 
+\begin{center}
+    \includegraphics{TP2 Simulink/syst_a_asservir.png}
+\end{center}
+
 \begin{itemize}
     \item \bf Système 1
 \end{itemize}
-
-On désire asservir le système suivant : 
+\subsubsection{\underline{\itshape \bf Correcteur proportionnel}}
+On considère dans un premier temps un correcteur proportionnel $C(s) = K > 0$ et le système 1 qui est modélisé par une fonction de transfert du premier ordre $T(s) = F_1(s) = \frac{A}{1 + \tau p}$.
 \\
-\includegraphics{TP2 Simulink/syst_a_asservir.png}
+\begin{itemize}
+    \item Calculons la Fonction de Transfert en Boucle Fermée (FTBF) grâce à la formule de Black : 
+\end{itemize}
 
+\large $FTBF = \frac{K\times \frac{A}{1 + \tau p}}{1 + K\times \frac{A}{1 + \tau p}} = \frac{KA}{1 + \tau p + KA} = \frac{\frac{KA}{1 + KA}}{1 + \frac{\tau}{1 + KA}p} = \frac{K_{BF}}{1 + \tau_{BF}p}$
+\begin{itemize}
+    \item \normalsize Calculons désormais l'erreur statique et le temps de réponse à 5$\%$ : 
+\end{itemize}
+\normalsize D'après le théorème de la valeur finale : 
+\\
+\large $\epsilon_s = \lim_{t \to \infty} \epsilon(t) = \lim_{p \to 0}p\epsilon(p)$
+\normalsize or \large $\frac{\epsilon(p)}{E(p)} = \frac{1}{1 + \frac{KA}{1 + \tau p}}$ et $E(p) = \frac{E_0}{p}$ \normalsize donc en injectant :
+\large$\epsilon_s = \lim_{p \to 0}p\times \frac{E_0}{p}\times \frac{1}{1 + \frac{KA}{1 + \tau p}} = \frac{E_0}{1 + KA}$
+\\ \normalsize Application numérique pour $K=1$ et $A = 1.81$ :  $\epsilon_s =\frac{E_0}{1 + 1.81} = 0.35E_0 =$ \fbox{$35\%$}
+\\
+\begin{itemize}
+    \item Pour un système du premier ordre, le temps de réponse à 5 $\%$ vaut $3\tau$, en particuler ici : $t_{r5\%} = 3\tau_{BF} = \frac{3\tau}{1 + KA} = \frac{3\times0.0213}{1 + 1.81} =$ \fbox{$22.74$ms}
+\end{itemize}
+On remarque que le temps de réponse à cinq pourcents du système  1 est trois fois plus rapide en étant bouclé que en boucle ouverte. Cependant, l'erreur statique est ici de 35$\%$ ce qui n'est pas du tout satisfaisant. 
+\\Cherchons les valeurs de K pour que le système admette une erreur statique de 10$\%$ puis 1$\%$ et leurs temps de réponse à 5$\%$ correspondants : 
+\\On cherche $\epsilon_s = 10\%$. Autrement dit : $\epsilon_s = 0.1E_0$. Mais aussi d'après les calculs précédents : 
+\\$\epsilon_s = \frac{E_0}{1 + KA} = 0.1E_0 \Leftrightarrow 1 + K\times 1.81 = 10 \Leftrightarrow K = 4.97$
+
+Pour $K = 4.97$, $t_{r5\%} = 3\tau_{BF} = 6.39$ms
+\\\\On cherche $\epsilon_s = 1\%$. De la même manière, on trouve $K = 54.7$ et $t_{r5\%} = 0.64$ms
+
+\begin{itemize}
+    \item On désire avoir un système 5 fois puis 50 fois plus rapide qu'en boucle ouverte : calculons les valeurs de K correspondantes : 
+\end{itemize}
+
+Système 5 fois plus rapide $\Leftrightarrow$ \large$ t_{r5\%_{BF}} = \frac{t_{r5\%_{BO}}}{5}$ \normalsize $\Leftrightarrow$ \large $\frac{3\tau}{1 + KA} = \frac{3\tau}{5}$ \normalsize $\Leftrightarrow$ \large $K = 2.2$
+\\\\\normalsize Erreur statique : \large $\epsilon_s = \frac{E_0}{1 + 2.2\times 1.81} = 0.2E_0 = 20\%$
+\\\\\normalsize Système 5 fois plus rapide $\Leftrightarrow$ \large$ t_{r5\%_{BF}} = \frac{t_{r5\%_{BO}}}{50}$ \normalsize $\Leftrightarrow$ \large $\frac{3\tau}{1 + KA} = \frac{3\tau}{50}$ \normalsize $\Leftrightarrow$ \large $K = 27.2$
+\\\\\normalsize Erreur statique : \large $\epsilon_s = \frac{E_0}{1 + 27.2\times 1.81} = 0.02E_0 = 2\%$
+\\\\
+\normalsize Résumons ainsi ces calculs sous forme de tableau : 
+
+\begin{center}
+    \begin{tabular}{ |p{3cm}|p{3cm}|p{3cm}|}
+
+        \hline
+        $K$ & $t_{r5\%}$(ms) & $\epsilon_s$ ($\%$)\\
+        \hline
+        1 & 22.74 & 35\\
+        4.97 & 6.39 & 10\\
+        54.7 & 0.64 & 1\\
+        2.2& 12.8 & 20\\
+        27.2 & 1.27  & 2\\
+        
+        
+        \hline
+        \end{tabular}
+    \end{center}
 \end{document}
