@@ -336,17 +336,12 @@ Mais on sait aussi qu'à $\omega_0$, $\frac{S}{E} = \frac{A}{2m}$ or $\frac{S}{E
 
 Nous avons désormais identifié les mesuré les éléments caractéristiques des deux systèmes. Cependant ces systèmes ne sont pas encore asservis.
 \\Désormais nous allons calculer un correcteur qui permettra d'asservir nos deux systèmes.
-
-\subsection{\itshape Travail Préparatoire}
-
-On désire asservir le système suivant : 
+\\On désire asservir le système suivant : 
 \begin{center}
     \includegraphics{TP2 Simulink/syst_a_asservir.png}
 \end{center}
 
-\begin{itemize}
-    \item \bf Système 1
-\end{itemize}
+\subsection{\itshape Système 1}
 \subsubsection{\underline{\itshape \bf Correcteur proportionnel}}
 On considère dans un premier temps un correcteur proportionnel $C(s) = K > 0$ et le système 1 qui est modélisé par une fonction de transfert du premier ordre $T(s) = F_1(s) = \frac{A}{1 + \tau p}$.
 \\
@@ -381,8 +376,10 @@ Pour $K = 4.97$, $t_{r5\%} = 3\tau_{BF} = 6.39$ms
 \end{itemize}
 
 Système 5 fois plus rapide $\Leftrightarrow$ \large$ t_{r5\%_{BF}} = \frac{t_{r5\%_{BO}}}{5}$ \normalsize $\Leftrightarrow$ \large $\frac{3\tau}{1 + KA} = \frac{3\tau}{5}$ \normalsize $\Leftrightarrow$ \large $K = 2.2$
+\\\normalsize Donc pour $K = 2.2$, on trouve $t_{r5\%_{BF}} = 12.8$ms
 \\\\\normalsize Erreur statique : \large $\epsilon_s = \frac{E_0}{1 + 2.2\times 1.81} = 0.2E_0 = 20\%$
-\\\\\normalsize Système 5 fois plus rapide $\Leftrightarrow$ \large$ t_{r5\%_{BF}} = \frac{t_{r5\%_{BO}}}{50}$ \normalsize $\Leftrightarrow$ \large $\frac{3\tau}{1 + KA} = \frac{3\tau}{50}$ \normalsize $\Leftrightarrow$ \large $K = 27.2$
+\\\\\normalsize Système 50 fois plus rapide $\Leftrightarrow$ \large$ t_{r5\%_{BF}} = \frac{t_{r5\%_{BO}}}{50}$ \normalsize $\Leftrightarrow$ \large $\frac{3\tau}{1 + KA} = \frac{3\tau}{50}$ \normalsize $\Leftrightarrow$ \large $K = 27.2$
+\\\normalsize Donc pour $K = 27.2$, on trouve $t_{r5\%_{BF}} = 1.27$ms
 \\\\\normalsize Erreur statique : \large $\epsilon_s = \frac{E_0}{1 + 27.2\times 1.81} = 0.02E_0 = 2\%$
 \\\\
 \normalsize Résumons ainsi ces calculs sous forme de tableau : 
@@ -403,4 +400,62 @@ Système 5 fois plus rapide $\Leftrightarrow$ \large$ t_{r5\%_{BF}} = \frac{t_{r
         \hline
         \end{tabular}
     \end{center}
+\newpage 
+\large \textit{ \textbf{Simulation}}
+\\\\\normalsize Dans cette partie, nous avons utilisé le logiciel "Simulink" pour tracer la réponse indicielle de l'asservissement pour les cinq valeurs de K calculées précédemment.
+\begin{itemize}
+    \item \bf \large K = 4.97
+\end{itemize}
+\begin{center}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/Erreur statique_syst_1_K=4.97.png}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/Reponse_indic_syst_1_K=4.97_tr5prct.png}
+
+\end{center}
+\newpage
+\normalsize L'erreur statique est représentée comme étant l'écart entre les deux curseurs horizontaux sur le premier graphe. On lit grâce aux valeurs du curseur que l'échelon atteint 1 et la réponse indicielle atteint 0.9 en régime permanent (la simulation est assez longue pour voir le régime permanent). L'erreur statique est donc de 10$\%$ en lisant la valeur de $\Delta Y$ et en multipliant par 100 cett valeur pour l'avoir en pourcent.
+\\De plus, on peut lire le temps de réponse à 5$\%$ sur le deuxième graphe : en effet, nous avons placé un curseur horizontal à 95$\%$ de la valeur finale de la réponse indicielle soit à $0.95\times0.9 = 0.855$.
+Il suffit ensuite de placer un premier curseur vertical au tout début de la simulation (ici à $t=0$) et d'en mettre un deuxième au niveau du croisement entre la réponse indicielle et le curseur horizontal. On trouve graphiquement $t_{r5\%} = 6.42$ms en lisant la valeur de $\Delta T$.
+\\Ainsi les valeurs trouvées en simulation sont quasiment égales (écart nul entre les erreurs statiques et écart de 0.03 ms entre les deux temps de réponse soit un écart de 0.46$\%$ qui peut s'expliquer par de légères erreurs de lecture graphique).
+
+\begin{itemize}
+    \item \bf \large K = 54.7
+\end{itemize}
+\begin{center}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/Erreur_statique_syst_1_K=54.7.png}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/tr5prct_syst_1_K=54.7.png}
+\end{center}
+\normalsize Par la même méthode que précédemment, on trouve comme erreur statique $0.9733\%$ et comme de temps de réponse à cinq pourcents de $0.646$ms.
+\\Cette fois-ci, on attendait une erreur statique de 1$\%$ mais la valeur mesurée est légèrement inférieure de 2.67$\%$. Cette différence s'explique de la difficulté d'être précis pour mesurer une erreur statique de 1$\%$ sur le graphe.
+
+\begin{itemize}
+    \item \bf \large K = 2.2
+\end{itemize}
+\begin{center}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/Err_statique_syst_1_K=2.2.png}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/tr5prct_syst_1_K=2.2.png}
+\end{center}
+\normalsize En utilisant la même méthode que précédemment, on mesure une erreur statique $\epsilon_s = 20.1\%$ et un temps de réponse à cinq pourcents $t_{r5\%} = 12.98$ms.
+Les valeurs mesurées sont de nouveau très proches, (écart de 0.5$\%$ entre les erreurs statiques et de 1.4$\%$ entre les temps de réponse à cinq pourcents) les légers écarts sont liées à la précision de lecture du graphe.
+\begin{itemize}
+    \item \bf \large K = 27.2
+\end{itemize}
+\begin{center}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/err_stat_syst_1_K=27.2.png}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/tr5prct_syst_1_K=27.2.png}
+\end{center}
+\normalsize Enfin, pour la dernière valeur de K, on mesure une erreur statique $\epsilon_s = 2.09\%$ et un temps de réponse à cinq pourcents $t_{r5\%} = 1.27$ms.
+Les valeurs mesurées sont égales pour les temps de réponse à cinq pourcents, et différentes de 4.5$\%$ pour les erreurs statiques. Cette erreur est plus élevée car le temps de réponse est très court en comparaison avec la durée de la réponse indicielle, ce qui rend difficile une lecture plus précise sur le graphe.
+
+\subsubsection{\underline{\bf Correcteur intégral}}
+
+On considère désormais un correcteur intégral $C(s) = \frac{1}{T_is}$
+
+\begin{itemize}
+    \item Calculons la FTBF de cet asservissement : 
+\end{itemize}
+\begin{center}
+    \large $FTBF = \frac{\frac{A}{T_ip(1+\tau p)}}{1 + \frac{A}{T_ip(1+\tau p)}} = \frac{A}{A + T_ip + T_i\tau p^2} = \frac{1}{1 + \frac{T_i}{A} + \frac{T_i \tau}{A}p^2} = \frac{A_{BF}}{1 + \frac{2z}{\omega_{BF}} + \frac{p^2}{w_{BF}^2}}$
+
+\end{center}
+\normalsize Par identification, $A_{BF} = 1$,\fbox{$\omega_{BF} = \sqrt{\frac{A}{T_i\tau}}$}, et $\frac{2z}{w_{BF}} = \frac{T_i}{A} \Leftrightarrow $\fbox{$z = \frac{1}{2}\sqrt{\frac{T_i}{\tau A}}$}
 \end{document}
