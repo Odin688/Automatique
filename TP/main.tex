@@ -343,7 +343,7 @@ Nous avons désormais identifié les mesuré les éléments caractéristiques de
 
 \subsection{\itshape Système 1}
 \subsubsection{\underline{\itshape \bf Correcteur proportionnel}}
-On considère dans un premier temps un correcteur proportionnel $C(s) = K > 0$ et le système 1 qui est modélisé par une fonction de transfert du premier ordre $T(s) = F_1(s) = \frac{A}{1 + \tau p}$.
+On considère dans un premier temps un correcteur proportionnel $C(p) = K > 0$ et le système 1 qui est modélisé par une fonction de transfert du premier ordre $T(s) = F_1(s) = \frac{A}{1 + \tau p}$.
 \\
 \begin{itemize}
     \item Calculons la Fonction de Transfert en Boucle Fermée (FTBF) grâce à la formule de Black : 
@@ -448,7 +448,7 @@ Les valeurs mesurées sont égales pour les temps de réponse à cinq pourcents,
 
 \subsubsection{\underline{\bf Correcteur intégral}}
 
-On considère désormais un correcteur intégral $C(s) = \frac{1}{T_is}$
+On considère désormais un correcteur intégral $C(p) = \frac{1}{T_ip}$
 
 \begin{itemize}
     \item Calculons la FTBF de cet asservissement : 
@@ -457,5 +457,20 @@ On considère désormais un correcteur intégral $C(s) = \frac{1}{T_is}$
     \large $FTBF = \frac{\frac{A}{T_ip(1+\tau p)}}{1 + \frac{A}{T_ip(1+\tau p)}} = \frac{A}{A + T_ip + T_i\tau p^2} = \frac{1}{1 + \frac{T_i}{A} + \frac{T_i \tau}{A}p^2} = \frac{A_{BF}}{1 + \frac{2z}{\omega_{BF}} + \frac{p^2}{w_{BF}^2}}$
 
 \end{center}
-\normalsize Par identification, $A_{BF} = 1$,\fbox{$\omega_{BF} = \sqrt{\frac{A}{T_i\tau}}$}, et $\frac{2z}{w_{BF}} = \frac{T_i}{A} \Leftrightarrow $\fbox{$z = \frac{1}{2}\sqrt{\frac{T_i}{\tau A}}$}
+\normalsize On obtient bien une FTBF de second ordre et, par identification, $A_{BF} = 1$,\fbox{$\omega_{BF} = \sqrt{\frac{A}{T_i\tau}}$}, et $\frac{2z}{w_{BF}} = \frac{T_i}{A} \Leftrightarrow $\fbox{$z = \frac{1}{2}\sqrt{\frac{T_i}{\tau A}}$}
+
+\begin{itemize}
+    \item Calculons désormais l'erreur statique : 
+\end{itemize}
+
+D'après le théorème de la valeur finale : 
+$\epsilon_s = \lim_{t \to \infty}\epsilon(t) = \lim_{p \to 0}p\epsilon(p)$ or $\frac{\epsilon(p)}{E(p)} = \frac{1}{1 + \frac{1}{T_ip}\frac{A}{(1+\tau p)}}$ et $E(p) = \frac{E_0}{p}$ donc en injectant :
+$\epsilon_s = \lim_{p \to 0}p \times \frac{E_0}{p}\times \frac{1}{1 + \frac{1}{T_ip}\frac{A}{(1+\tau p)}} = 0$.
+\\L'erreur statique est donc nulle, ce qui est le principal avantage du correcteur intégral. Cependant, nous avons montré que la FTBF était de second ordre, et que $z = \frac{1}{2}sqrt{\frac{T_i}{\tau A}}$. Donc plus z diminue, donc plus $T_i$ diminue, le système devient plus nerveux et moins amorti alors que si $T_i$ augmente, le système est plus amorti mais moins nerveux.
+\\De plus, on cherche à calculer $T_i$ pour que la réponse indicielle en boucle fermée présente un dépassement de 5$\%$.
+D'après les abaques, pour un premier dépassement à 5$\%$ : $z=0.7$ et $T_i = (2z)^2\times\tau A \Rightarrow T_i = (0.7\times2)^2\times21.3.10^{-3}\times1.81 = 0.0756$.
+Ainsi, on peut déterminer $\omega_{BF} = \sqrt{\frac{A}{T_i \tau}} = 33.526$ rad/s.
+\\Ensuite, d'après la deuxième abaque, pour $z=0.7$, on récupère le temps de réponse à 5$\%$ réduit :
+$t_{r5\%}\omega_{BF} = 3 \Leftrightarrow t_{r5\%} = \frac{3}{\omega_{BF}} = \frac{3}{33.526} = 89$ms.
+\\\\    \large \textit{ \textbf{Simulation}}
 \end{document}
