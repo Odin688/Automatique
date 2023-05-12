@@ -402,7 +402,12 @@ Système 5 fois plus rapide $\Leftrightarrow$ \large$ t_{r5\%_{BF}} = \frac{t_{r
     \end{center}
 \newpage 
 \large \textit{ \textbf{Simulation}}
-\\\\\normalsize Dans cette partie, nous avons utilisé le logiciel "Simulink" pour tracer la réponse indicielle de l'asservissement pour les cinq valeurs de K calculées précédemment.
+\\\\\normalsize Dans cette partie, nous avons utilisé le logiciel "Simulink" pour tracer la réponse indicielle de l'asservissement pour les cinq valeurs de K calculées précédemment. Nous avons utilisé ce système pour les différentes simulations : 
+\begin{center}
+    \includegraphics[width = 15 cm]{TP2 Simulink/Syst_1/Syst_1_Simulink_P.png}
+\end{center}
+
+
 \begin{itemize}
     \item \bf \large K = 4.97
 \end{itemize}
@@ -473,4 +478,43 @@ Ainsi, on peut déterminer $\omega_{BF} = \sqrt{\frac{A}{T_i \tau}} = 33.526$ ra
 \\Ensuite, d'après la deuxième abaque, pour $z=0.7$, on récupère le temps de réponse à 5$\%$ réduit :
 $t_{r5\%}\omega_{BF} = 3 \Leftrightarrow t_{r5\%} = \frac{3}{\omega_{BF}} = \frac{3}{33.526} = 89$ms.
 \\\\    \large \textit{ \textbf{Simulation}}
+\\Le système simulé dans Simulink est relativement le même que pour le correcteur proportionnel : 
+\begin{center}
+    \includegraphics[width = 15 cm]{TP2 Simulink/Syst_1/Syst1_Simulink_I.png}
+\end{center}
+\newpage
+Traçons désormais les réponses indicielles pour différentes valeurs de $T_i$ : 
+\begin{itemize}
+    \item \large $\mathbf{T_i = \tau = 0.0213}$
+\end{itemize}
+
+\begin{center}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/depassement_syst1_Ti=tau.png}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=tau.png}
+\end{center}
+\normalsize Le premier graphe permet de mesurer l'amplitude du premier dépassement : la réponse atteint 1 en régime permanent et le premier dépassement atteint son maximum en 1.28. On en déduit donc que l'amplitude du premier dépassement est de 28.2$\%$.
+On remarque aussi qu'on a bien une erreur statique nulle (la réponse indicielle atteint 1 en régime permanent tout comme l'échelon : $\epsilon_s = 1-1 = 0\%$).
+La deuxième capture d'écran permet de lire le temps de réponse à 5$\%$. La méthode pour le mesurer est cependant différente que pour le correcteur proportionnel : la réponse présente des dépassements, il faut donc trouver le point où la réponse de dépasse plus de 5$\%$ du régime permanent ou ne passe plus en dessous de 95$\%$ du régime permanent.
+Avec cette méthode, nous avons trouvé que $t_{r5\%} = 123.23$ms.
+\\\\\underline{\bf Diagramme de Black de la FTBO :}
+\\\\On rappelle que :
+\begin{center}
+    \large$FTBO = \frac{A}{\tau p + T_i\tau p^2}$
+\end{center}
+\normalsize Avec notre valeur de $T_i$, on obtient :
+\begin{center}
+    \large$FTBO = \frac{1.81}{0.0213p + 4.5369.10^{-4}p^2}$
+\end{center}
+\normalsize On peut maintenant tracer le diagramme de Black à l'aide Matlab en exécutant la fonction :
+\begin{verbatim}
+    T=tf([coeff num],[coeff den]) 
+\end{verbatim}
+Et ensuite :
+\begin{verbatim}
+    nichols(T)
+\end{verbatim}
+On obtient alors : 
+\begin{center}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/Ti=tau_syst_1_Black.png}
+\end{center}
 \end{document}

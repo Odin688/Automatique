@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.5)  8 MAY 2023 21:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.5)  11 MAY 2023 20:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -555,136 +555,193 @@ Underfull \hbox (badness 10000) in paragraph at lines 404--406
 
  []
 
-<TP2 Simulink/Syst_1/Erreur statique_syst_1_K=4.97.png, id=173, 1143.0705pt x 570.933pt>
+<TP2 Simulink/Syst_1/Syst_1_Simulink_P.png, id=173, 660.66824pt x 236.68425pt>
+File: TP2 Simulink/Syst_1/Syst_1_Simulink_P.png Graphic file (type png)
+<use TP2 Simulink/Syst_1/Syst_1_Simulink_P.png>
+Package pdftex.def Info: TP2 Simulink/Syst_1/Syst_1_Simulink_P.png  used on input line 407.
+(pdftex.def)             Requested size: 426.79134pt x 152.89671pt.
+<TP2 Simulink/Syst_1/Erreur statique_syst_1_K=4.97.png, id=174, 1143.0705pt x 570.933pt>
 File: TP2 Simulink/Syst_1/Erreur statique_syst_1_K=4.97.png Graphic file (type png)
 <use TP2 Simulink/Syst_1/Erreur statique_syst_1_K=4.97.png>
-Package pdftex.def Info: TP2 Simulink/Syst_1/Erreur statique_syst_1_K=4.97.png  used on input line 410.
+Package pdftex.def Info: TP2 Simulink/Syst_1/Erreur statique_syst_1_K=4.97.png  used on input line 415.
 (pdftex.def)             Requested size: 540.60236pt x 270.01118pt.
-<TP2 Simulink/Syst_1/Reponse_indic_syst_1_K=4.97_tr5prct.png, id=174, 1141.26375pt x 569.7285pt>
+<TP2 Simulink/Syst_1/Reponse_indic_syst_1_K=4.97_tr5prct.png, id=175, 1141.26375pt x 569.7285pt>
 File: TP2 Simulink/Syst_1/Reponse_indic_syst_1_K=4.97_tr5prct.png Graphic file (type png)
 <use TP2 Simulink/Syst_1/Reponse_indic_syst_1_K=4.97_tr5prct.png>
-Package pdftex.def Info: TP2 Simulink/Syst_1/Reponse_indic_syst_1_K=4.97_tr5prct.png  used on input line 411.
+Package pdftex.def Info: TP2 Simulink/Syst_1/Reponse_indic_syst_1_K=4.97_tr5prct.png  used on input line 416.
 (pdftex.def)             Requested size: 540.60236pt x 269.86752pt.
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 410--412
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 415--417
  [] 
  []
 
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 410--412
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 415--417
  [] 
  []
 
-[18 <./TP2 Simulink/Syst_1/Erreur statique_syst_1_K=4.97.png> <./TP2 Simulink/Syst_1/Reponse_indic_syst_1_K=4.97_tr5prct.png>]
-<TP2 Simulink/Syst_1/Erreur_statique_syst_1_K=54.7.png, id=181, 1139.457pt x 572.73975pt>
+[18 <./TP2 Simulink/Syst_1/Syst_1_Simulink_P.png> <./TP2 Simulink/Syst_1/Erreur statique_syst_1_K=4.97.png>] [19 <./TP2 Simulink/Syst_1/Reponse_indic_syst_1_K=4.97_tr5prct.png>]
+<TP2 Simulink/Syst_1/Erreur_statique_syst_1_K=54.7.png, id=188, 1139.457pt x 572.73975pt>
 File: TP2 Simulink/Syst_1/Erreur_statique_syst_1_K=54.7.png Graphic file (type png)
 <use TP2 Simulink/Syst_1/Erreur_statique_syst_1_K=54.7.png>
-Package pdftex.def Info: TP2 Simulink/Syst_1/Erreur_statique_syst_1_K=54.7.png  used on input line 424.
+Package pdftex.def Info: TP2 Simulink/Syst_1/Erreur_statique_syst_1_K=54.7.png  used on input line 429.
 (pdftex.def)             Requested size: 540.60236pt x 271.73085pt.
-<TP2 Simulink/Syst_1/tr5prct_syst_1_K=54.7.png, id=182, 1149.093pt x 572.1375pt>
+<TP2 Simulink/Syst_1/tr5prct_syst_1_K=54.7.png, id=189, 1149.093pt x 572.1375pt>
 File: TP2 Simulink/Syst_1/tr5prct_syst_1_K=54.7.png Graphic file (type png)
 <use TP2 Simulink/Syst_1/tr5prct_syst_1_K=54.7.png>
-Package pdftex.def Info: TP2 Simulink/Syst_1/tr5prct_syst_1_K=54.7.png  used on input line 425.
+Package pdftex.def Info: TP2 Simulink/Syst_1/tr5prct_syst_1_K=54.7.png  used on input line 430.
 (pdftex.def)             Requested size: 540.60236pt x 269.16656pt.
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 424--426
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 429--431
  [] 
  []
 
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 424--426
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 429--431
  [] 
  []
 
-[19 <./TP2 Simulink/Syst_1/Erreur_statique_syst_1_K=54.7.png>]
-<TP2 Simulink/Syst_1/Err_statique_syst_1_K=2.2.png, id=189, 1151.502pt x 573.342pt>
+[20 <./TP2 Simulink/Syst_1/Erreur_statique_syst_1_K=54.7.png>]
+<TP2 Simulink/Syst_1/Err_statique_syst_1_K=2.2.png, id=196, 1151.502pt x 573.342pt>
 File: TP2 Simulink/Syst_1/Err_statique_syst_1_K=2.2.png Graphic file (type png)
 <use TP2 Simulink/Syst_1/Err_statique_syst_1_K=2.2.png>
-Package pdftex.def Info: TP2 Simulink/Syst_1/Err_statique_syst_1_K=2.2.png  used on input line 434.
+Package pdftex.def Info: TP2 Simulink/Syst_1/Err_statique_syst_1_K=2.2.png  used on input line 439.
 (pdftex.def)             Requested size: 540.60236pt x 269.18207pt.
-<TP2 Simulink/Syst_1/tr5prct_syst_1_K=2.2.png, id=190, 1153.30875pt x 573.94424pt>
+<TP2 Simulink/Syst_1/tr5prct_syst_1_K=2.2.png, id=197, 1153.30875pt x 573.94424pt>
 File: TP2 Simulink/Syst_1/tr5prct_syst_1_K=2.2.png Graphic file (type png)
 <use TP2 Simulink/Syst_1/tr5prct_syst_1_K=2.2.png>
-Package pdftex.def Info: TP2 Simulink/Syst_1/tr5prct_syst_1_K=2.2.png  used on input line 435.
+Package pdftex.def Info: TP2 Simulink/Syst_1/tr5prct_syst_1_K=2.2.png  used on input line 440.
 (pdftex.def)             Requested size: 540.60236pt x 269.0357pt.
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 434--436
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 439--441
  [] 
  []
 
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 434--436
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 439--441
  [] 
  []
 
-[20 <./TP2 Simulink/Syst_1/tr5prct_syst_1_K=54.7.png> <./TP2 Simulink/Syst_1/Err_statique_syst_1_K=2.2.png>]
-<TP2 Simulink/Syst_1/err_stat_syst_1_K=27.2.png, id=198, 1151.502pt x 572.73975pt>
+[21 <./TP2 Simulink/Syst_1/tr5prct_syst_1_K=54.7.png> <./TP2 Simulink/Syst_1/Err_statique_syst_1_K=2.2.png>]
+<TP2 Simulink/Syst_1/err_stat_syst_1_K=27.2.png, id=204, 1151.502pt x 572.73975pt>
 File: TP2 Simulink/Syst_1/err_stat_syst_1_K=27.2.png Graphic file (type png)
 <use TP2 Simulink/Syst_1/err_stat_syst_1_K=27.2.png>
-Package pdftex.def Info: TP2 Simulink/Syst_1/err_stat_syst_1_K=27.2.png  used on input line 443.
+Package pdftex.def Info: TP2 Simulink/Syst_1/err_stat_syst_1_K=27.2.png  used on input line 448.
 (pdftex.def)             Requested size: 540.60236pt x 268.89932pt.
-<TP2 Simulink/Syst_1/tr5prct_syst_1_K=27.2.png, id=199, 1153.30875pt x 573.94424pt>
+<TP2 Simulink/Syst_1/tr5prct_syst_1_K=27.2.png, id=205, 1153.30875pt x 573.94424pt>
 File: TP2 Simulink/Syst_1/tr5prct_syst_1_K=27.2.png Graphic file (type png)
 <use TP2 Simulink/Syst_1/tr5prct_syst_1_K=27.2.png>
-Package pdftex.def Info: TP2 Simulink/Syst_1/tr5prct_syst_1_K=27.2.png  used on input line 444.
+Package pdftex.def Info: TP2 Simulink/Syst_1/tr5prct_syst_1_K=27.2.png  used on input line 449.
 (pdftex.def)             Requested size: 540.60236pt x 269.0357pt.
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 443--445
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 448--450
  [] 
  []
 
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 443--445
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 448--450
  [] 
  []
 
-[21 <./TP2 Simulink/Syst_1/tr5prct_syst_1_K=2.2.png> <./TP2 Simulink/Syst_1/err_stat_syst_1_K=27.2.png>]
+[22 <./TP2 Simulink/Syst_1/tr5prct_syst_1_K=2.2.png> <./TP2 Simulink/Syst_1/err_stat_syst_1_K=27.2.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 449.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@underline' on input line 449.
+(hyperref)                removing `math shift' on input line 454.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 449.
+(hyperref)                removing `\@@underline' on input line 454.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 449.
+(hyperref)                removing `\hbox' on input line 454.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 449.
+(hyperref)                removing `\mathsurround' on input line 454.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 449.
+(hyperref)                removing `\z@' on input line 454.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 466--476
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 454.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 471--482
 
  []
 
-[22 <./TP2 Simulink/Syst_1/tr5prct_syst_1_K=27.2.png>] [23] (./main.aux)
+[23 <./TP2 Simulink/Syst_1/tr5prct_syst_1_K=27.2.png>]
+<TP2 Simulink/Syst_1/Syst1_Simulink_I.png, id=218, 651.6345pt x 226.446pt>
+File: TP2 Simulink/Syst_1/Syst1_Simulink_I.png Graphic file (type png)
+<use TP2 Simulink/Syst_1/Syst1_Simulink_I.png>
+Package pdftex.def Info: TP2 Simulink/Syst_1/Syst1_Simulink_I.png  used on input line 483.
+(pdftex.def)             Requested size: 426.79134pt x 148.31111pt.
+ [24 <./TP2 Simulink/Syst_1/Syst1_Simulink_I.png>]
+<TP2 Simulink/Syst_1/depassement_syst1_Ti=tau.png, id=224, 1156.32pt x 572.73975pt>
+File: TP2 Simulink/Syst_1/depassement_syst1_Ti=tau.png Graphic file (type png)
+<use TP2 Simulink/Syst_1/depassement_syst1_Ti=tau.png>
+Package pdftex.def Info: TP2 Simulink/Syst_1/depassement_syst1_Ti=tau.png  used on input line 492.
+(pdftex.def)             Requested size: 540.60236pt x 267.76321pt.
+<TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=tau.png, id=225, 1156.32pt x 567.92175pt>
+File: TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=tau.png Graphic file (type png)
+<use TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=tau.png>
+Package pdftex.def Info: TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=tau.png  used on input line 493.
+(pdftex.def)             Requested size: 540.60236pt x 265.51074pt.
+
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 492--494
+ [] 
+ []
+
+
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 492--494
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 495--501
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 495--501
+
+ []
+
+[25 <./TP2 Simulink/Syst_1/depassement_syst1_Ti=tau.png> <./TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=tau.png>]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 509.
+ (c:/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+)
+<TP2 Simulink/Syst_1/Ti=tau_syst_1_Black.png, id=235, 1040.688pt x 552.8655pt>
+File: TP2 Simulink/Syst_1/Ti=tau_syst_1_Black.png Graphic file (type png)
+<use TP2 Simulink/Syst_1/Ti=tau_syst_1_Black.png>
+Package pdftex.def Info: TP2 Simulink/Syst_1/Ti=tau_syst_1_Black.png  used on input line 518.
+(pdftex.def)             Requested size: 540.60236pt x 287.20488pt.
+
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 518--519
+ [] 
+ []
+
+[26 <./TP2 Simulink/Syst_1/Ti=tau_syst_1_Black.png>] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 6C042AC31BBBF60F12015E39279723E7;2334.
  ) 
 Here is how much of TeX's memory you used:
- 9899 strings out of 476017
- 157285 string characters out of 5793767
+ 9958 strings out of 476017
+ 159504 string characters out of 5793767
  1872660 words of memory out of 5000000
- 30165 multiletter control sequences out of 15000+600000
- 532808 words of font info for 79 fonts, out of 8000000 for 9000
+ 30212 multiletter control sequences out of 15000+600000
+ 533121 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,76p,561b,526s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi2074.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on main.pdf (23 pages, 1067126 bytes).
+<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi2074.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on main.pdf (26 pages, 1300289 bytes).
 PDF statistics:
- 334 PDF objects out of 1000 (max. 8388607)
- 220 compressed objects within 3 object streams
- 37 named destinations out of 1000 (max. 500000)
- 205 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 377 PDF objects out of 1000 (max. 8388607)
+ 242 compressed objects within 3 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 230 words of extra memory for PDF output out of 10000 (max. 10000000)
 
