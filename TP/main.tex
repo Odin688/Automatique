@@ -517,4 +517,54 @@ On obtient alors :
 \begin{center}
     \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/Ti=tau_syst_1_Black.png}
 \end{center}
+Pour calculer la marge de phase, il faut récupérer l'abscisse du point où la courbe coupe l'axe $y=0$ et faire la différence entre cette abscisse et $-180$.
+\\Ainsi on trouve comme marge de phase \fbox{$m_{\phi} = -139-(-180) = 41^{\circ}$}.
+
+\begin{itemize}
+    \item \large $\mathbf{T_i = 5\tau = 0.1065}$
+\end{itemize}
+\begin{center}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/depassement_syst_1_Ti=5tau.png}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=5tau.png}
+    
+\end{center}
+\normalsize Le premier graphe permet de mesurer l'amplitude du premier dépassement : la réponse atteint 1 en régime permanent et le premier dépassement atteint son maximum en 1.01. On en déduit donc que l'amplitude du premier dépassement est de 1$\%$.
+On remarque aussi qu'on a bien une erreur statique nulle (la réponse indicielle atteint 1 en régime permanent tout comme l'échelon : $\epsilon_s = 1-1 = 0\%$).
+La deuxième capture d'écran permet de lire le temps de réponse à 5$\%$ : $t_{r5\%} = 127.1$ms
+\\\\\underline{\bf Diagramme de Black de la FTBO :}
+\normalsize Avec notre valeur de $T_i = 5\tau$, on a :
+\begin{center}
+    \large$FTBO = \frac{1.81}{0.1065p + 2.26.10^{-2}p^2}$
+\end{center}
+\normalsize On peut maintenant tracer le diagramme de Black à l'aide Matlab :
+On obtient alors : 
+\begin{center}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/Ti=5tau_syst_1_Black.png}
+\end{center}
+Pour calculer la marge de phase, il faut récupérer l'abscisse du point où la courbe coupe l'axe $y=0$ et faire la différence entre cette abscisse et $-180$.
+\\Ainsi on trouve comme marge de phase \fbox{$m_{\phi} = -109-(-180) = 71^{\circ}$}.
+\newpage
+\begin{itemize}
+    \item \large $\mathbf{T_i = 10\tau = 0.213}$
+\end{itemize}
+\begin{center}
+    
+    \includegraphics[width = 19 cm]{%à refaire les simulations je ne les trouve pas}
+    
+\end{center}
+\normalsize Le premier graphe permet de mesurer l'amplitude du premier dépassement : la réponse atteint 1 en régime permanent et le premier dépassement atteint son maximum en 1.01. On en déduit donc que l'amplitude du premier dépassement est de 1$\%$.
+On remarque aussi qu'on a bien une erreur statique nulle (la réponse indicielle atteint 1 en régime permanent tout comme l'échelon : $\epsilon_s = 1-1 = 0\%$).
+La deuxième capture d'écran permet de lire le temps de réponse à 5$\%$ : $t_{r5\%} = 127.1$ms
+\\\\\underline{\bf Diagramme de Black de la FTBO :}
+\normalsize Avec notre valeur de $T_i = 5\tau$, on a :
+\begin{center}
+    \large$FTBO = \frac{1.81}{0.1065p + 2.26.10^{-2}p^2}$
+\end{center}
+\normalsize On peut maintenant tracer le diagramme de Black à l'aide Matlab :
+On obtient alors : 
+\begin{center}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/Ti=10tau_syst_1_Black.png}
+\end{center}
+Pour calculer la marge de phase, il faut récupérer l'abscisse du point où la courbe coupe l'axe $y=0$ et faire la différence entre cette abscisse et $-180$.
+\\Ainsi on trouve comme marge de phase \fbox{$m_{\phi} = -109-(-180) = 71^{\circ}$}.
 \end{document}
