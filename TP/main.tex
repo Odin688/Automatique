@@ -606,4 +606,170 @@ On considère dans un premier temps un correcteur proportionnel $C(p) = K > 0$ e
 \large $FTBF = \frac{K\times \frac{A}{1 + 2z\frac{p}{\omega_0} + (\frac{p}{\omega_0})^2}}{1 + K\times \frac{A}{1 + 2z\frac{p}{\omega_0} + (\frac{p}{\omega_0})^2}} = \frac{KA}{1 + 2z\frac{p}{\omega_0} + (\frac{p}{\omega_0})^2 + KA} = \frac{\frac{KA}{1 + KA}}{1 + \frac{2zp}{\omega_0(1+KA)}p + (\frac{p}{\omega_0\sqrt{1+KA}})^2} = \frac{K_{BF}}{1 + \frac{2z_{BF}p}{\omega_{0_{BF}}}+ (\frac{p}{\omega_{0_{BF}}})^2}$
 \\\\\normalsize Donc \large \fbox{$K_{BF} = \frac{KA}{1 + KA}$}, \fbox{$\omega_{0_{BF}} = \omega_0\sqrt{1 + KA}$} \normalsize et \large \fbox{$z_{BF} = \frac{z}{\sqrt{1 + KA}}$}.
 \\\\ \normalsize Ainsi, on peut en déduire que si K augmente, z diminue et le système devient plus nerveux, et l'erreur statique diminue. Cependant, pour un système du deuxième ordre, la phase ne dépasse pas -180$^{\circ}$ donc le système ne peut pas devenir instable. Plus K augmente, plus le système est oscillatoire, car on se rapproche de l'instabilité, mais sans jamais l'atteindre. Cependant, dans notre cas, il se peut que le modèle soit mauvais et que le système puisse devenir instable.
+
+\begin{itemize}
+    \item Calculons K pour que le système admette une erreur statique de 10$\%$ : 
+\end{itemize}
+La méthode est identique à celle appliquée pour le système 1. En effet, l'erreur statique concerne le régime permanent et est donc indépendante des pôles (qui régissent le régime transitoire) et la FTBF du système 1 et celle du système 2 ont la même amplification statique.
+On cherche donc : 
+\begin{center}
+    $\epsilon_s = \frac{E_0}{10} = \frac{E_0}{1 + KA} \Leftrightarrow 1 + KA = 10 \Leftrightarrow$\fbox{$K = 4.5$} avec $A = 2$.
+\end{center}
+On peut ainsi en déduire $z_{BF} = \frac{z}{\sqrt{1 + KA}} = \frac{0.5}{\sqrt{10}} \approx 0.158$. D'après les abaques, le premier dépassement sera de \fbox{$D_1 = 60\%$}.
+De plus, $\omega_{0_{BF}} = \omega_0\sqrt{1 + KA} = 44.6\sqrt{10} = 141.037$ rad.s$^{-1}$
+D'après les abaques, le temps de réponse réduit est : $t_{r5\%}\omega_{0_{BF}} = 20 \Leftrightarrow $\fbox{$t_{r5\%} = 141.8$ ms}.
+
+\begin{itemize}
+    \item Calculons K pour que le système admette une erreur statique de 2$\%$ : 
+\end{itemize}
+De même : 
+\begin{center}
+    $\epsilon_s = \frac{2E_0}{100} = \frac{E_0}{1 + KA} \Leftrightarrow 1 + KA = 50 \Leftrightarrow$\fbox{$K = 24.5$} 
+\end{center}
+On peut ainsi en déduire $z_{BF} = \frac{z}{\sqrt{1 + KA}} = \frac{0.5}{\sqrt{50}} \approx 0.07$. D'après les abaques, le premier dépassement sera de \fbox{$D_1 = 80\%$}.
+De plus, $\omega_{0_{BF}} = \omega_0\sqrt{1 + KA} = 44.6\sqrt{50} = 315.37$ rad.s$^{-1}$
+D'après les abaques, le temps de réponse réduit est : $t_{r5\%}\omega_{0_{BF}} = 40 \Leftrightarrow $\fbox{$t_{r5\%} = 126.8$ ms}.
+\newpage
+\normalsize Résumons ainsi ces calculs sous forme de tableau : 
+
+\begin{center}
+    \begin{tabular}{ |p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
+
+        \hline
+        $K$ & $t_{r5\%}$(ms) & $\epsilon_s$ ($\%$)&$D_1$($\%$)\\
+        \hline
+        4.5 & 141.8$\times 10^{-3}$ & 10 & 60\\
+        24.5 & 126.8$\times10^{-3}$ & 2 & 80\\ 
+        
+        \hline
+        \end{tabular}
+    \end{center}
+\large \textit{ \textbf{Simulation}}
+\\\\\normalsize Dans cette partie, nous avons utilisé le logiciel "Simulink" pour tracer la réponse indicielle de
+l’asservissement pour les deux valeurs de K calculées précédemment. Nous avons utilisé ce système
+pour les différentes simulations : 
+\begin{center}
+    \includegraphics[width = 15 cm]{TP2 Simulink/Syst_2/Syst_2_Simunlink_P.png}
+\end{center}
+\begin{itemize}
+    \item \bf \large K = 4.5
+\end{itemize}
+\begin{center}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_2/Depass_4_1_K=4.5.png}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_2/tr5prct_4_1_K=4.5.png}
+\end{center}
+    Sur le premier graphe, on peut déjà observer que l'erreur statique est bien de 10$\%$ : l'échelon atteint 1 et la réponse indicielle 0.9, on a bien 10$\%$ d'erreur statique.
+    Pour l'amplitude du premier dépassement, on détermine déjà l'écart entre le régime permanent et le dépassement : $1.442 -0.9 = 0.542$. On divise ensuite ce nombre par 1$\%$ de 0.9 donc par 0.009.
+    On a finalement $D_1 = \frac{0.542}{0.009} = 60.22\%$. Enfin, on peut voir le temps de réponse à 5$\%$ sur la deuxième capture : $t_{r5\%}$ = 136.44 ms.
+    Ainsi nos valeurs simulées sont plutôt proches les unes des autres (écart de 0.3$\%$ entre les valeurs des amplitudes du premier dépassement, écart nul entre les erreurs statiques et écart de 4$\%$ entre les temps de réponse). Toutes ces erreurs peuvent être dues à une imprécision des mesures sur les graphes des réponses indicielles mais comme ces erreurs ne sont pas grandes et cohérentes, le modèle est bon pour cette valeur de K.
+\newpage
+\begin{itemize}
+    \item \bf \large K = 24.5
+\end{itemize}
+\begin{center}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_2/depassement_4_1_K=24.5.png}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_2/tr5prct_4.1_K=24.5.png}
+\end{center}
+    Sur le premier graphe, on peut déjà observer que l'erreur statique est bien de 2$\%$ : l'échelon atteint 1 et la réponse indicielle 0.98, on a bien 2$\%$ d'erreur statique.
+    Pour l'amplitude du premier dépassement, on détermine déjà l'écart entre le régime permanent et le dépassement : $1.765 -0.98 = 0.785$. On divise ensuite ce nombre par 1$\%$ de 0.98 donc par 0.0098.
+    On a finalement $D_1 = \frac{0.785}{0.0098} = 80.10\%$. Enfin, on peut voir le temps de réponse à 5$\%$ sur la deuxième capture : $t_{r5\%}$ = 130.95 ms.
+    Ainsi nos valeurs simulées sont plutôt proches les unes des autres (écart de 0.13$\%$ entre les valeurs des amplitudes du premier dépassement, écart nul entre les erreurs statiques et écart de 3.27$\%$ entre les temps de réponse). Toutes ces erreurs peuvent être dues à une imprécision des mesures sur les graphes des réponses indicielles mais comme ces erreurs ne sont pas grandes et cohérentes, le modèle est bon pour cette valeur de K.
+\\\\Finalement, on se rend compte ici que plus K augmente, plus l'erreur statique diminue, mais en contrepartie le système devient plus nerveux. Dans notre cas, des dépassements de 60 et 80$\%$ sont très mauvais, malgré l'erreur statique faible.
+\newpage
+\subsubsection{\underline{\bf Correcteur intégral}}
+
+On considère désormais un correcteur intégral $C(p) = \frac{1}{T_ip}$
+\\\\\large \textit{ \textbf{Simulation}} 
+\\\\\normalsize Le système simulé dans Simulink est relativement le même que pour le correcteur proportionnel : 
+\begin{center}
+    \includegraphics[width = 15 cm]{TP2 Simulink/Syst_2/Syst_2_Simulink_I.png}
+\end{center}
+
+Traçons désormais les réponses indicielles pour différentes valeurs de $T_i$ : 
+\begin{itemize}
+    \item \large $\mathbf{T_i = \frac{20}{\omega_0} = 0.448}$
+\end{itemize}
+
+\begin{center}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_2/tr5prct_4.2_Ti=20_sur_omega0.png}
+
+\end{center}
+On peut tout de suite remarquer que cette réponse indicielle n'admet pas de dépassements, qu'elle est bien au moins du deuxième ordre (tangente nulle à l'origine) et que l'erreur statique est nulle (elle l'est bien, il aurait fallu allonger la durée de simulation pour bien observer que la réponse tend vers 1).
+On peut ensuite lire que $t_{r5\%} = 627.65$ms.
+
+\underline{\bf Diagramme de Black de la FTBO :}
+\\\\On rappelle que : 
+\begin{center}
+   \large $FTBO = \frac{A}{T_ip + \frac{2zT_i}{\omega_0}p^2 + \frac{T_i}{\omega_0^2}p^3}$.
+    \normalsize Pour $T_i = \frac{20}{\omega_0}$, \large $FTBO = \frac{2}{0.4484p + 0.101p^2 + 0.0002254p^3}$.
+\end{center}
+\normalsize On obtient alors :
+\begin{center}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_2/nichols_Ti=20_sur_omega0.png}
+\end{center}
+On trouve comme marge de phase \fbox{$m_{\phi_{\frac{20}{\omega_0}}} = -128-(-180) = 52^{\circ}$}.
+\newpage
+\begin{itemize}
+    \item \large $\mathbf{T_i = \frac{10}{\omega_0} = 0.2242}$
+\end{itemize}
+\begin{center}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_2/tr5prct_4.2_Ti=10_sur_omega0.png}
+
+\end{center}
+On peut de nouveau remarquer que cette réponse indicielle n'admet pas de dépassements, qu'elle est bien au moins du deuxième ordre (tangente nulle à l'origine) et que l'erreur statique est nulle.
+On peut ensuite lire que $t_{r5\%} = 288.10$ms.
+\\\\\underline{\bf Diagramme de Black de la FTBO :}
+
+\begin{center}
+    \normalsize Pour $T_i = \frac{10}{\omega_0}$, \large $FTBO = \frac{2}{0.2242p + 0.00503p^2 + 0.0001127p^3}$.
+\end{center}
+\newpage
+\normalsize On obtient alors :
+\begin{center}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_2/nichols_Ti=10_sur_omega0.png}
+\end{center}
+On trouve comme marge de phase \fbox{$m_{\phi_{\frac{10}{\omega_0}}} = -102-(-180) = 78^{\circ}$}.
+\newpage
+\begin{itemize}
+    \item \large $\mathbf{T_i = \frac{5}{\omega_0} = 0.112}$
+\end{itemize}
+\begin{center}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_2/tr5prct_et_depassement_4.2_5_sur_omega0.png}
+
+\end{center}
+On remarque que la réponse admet désormais des dépassements, mais l'erreur staituqe est toujours nulle. Nous avons placé les curseurs de façon à pouvoir mesurer l'amplitude du premier dépassement et le temps de réponse à cinq pourcents.
+On trouve ainsi $D_1 = 12.3\%$ et $t_{r5\%} = 227.2$ms.
+\\\\\underline{\bf Diagramme de Black de la FTBO :}
+
+\begin{center}
+    \normalsize Pour $T_i = \frac{5}{\omega_0}$, \large $FTBO = \frac{2}{0.1121p + 0.0025p^2 + 0.0000564p^3}$.
+\end{center}
+\newpage
+\normalsize On obtient alors :
+\begin{center}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_2/nichols_4.2_Ti=5_sur_omega0.png}
+\end{center}
+On trouve comme marge de phase \fbox{$m_{\phi_{\frac{5}{\omega_0}}} = -118-(-180) = 62^{\circ}$}.
+\newpage
+\begin{itemize}
+    \item \large $\mathbf{T_i = \frac{1}{\omega_0} = 0.02242}$
+\end{itemize}
+\begin{center}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_2/4.2_instable_Ti=1_sur_omega0.png}
+
+
+\end{center}
+Pour cette valeur de $T_i$, le système est instable. On peut le confirmer en mesurant la marge de phase :
+\\\\\underline{\bf Diagramme de Black de la FTBO :}
+
+\begin{center}
+    \normalsize Pour $T_i = \frac{1}{\omega_0}$, \large $FTBO = \frac{2}{0.0224p + 0.000503p^2 + 0.0000113p^3}$.
+\end{center}
+\newpage
+\normalsize On obtient alors :
+\begin{center}
+    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_2/nichols_4.2_Ti=1_sur_omega0.png}
+\end{center}
+On trouve comme marge de phase \fbox{$m_{\phi_{\frac{1}{\omega_0}}} = -209-(-180) = -29^{\circ} < 0$}. Le système est donc bien instable.
+
 \end{document}
