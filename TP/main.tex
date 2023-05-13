@@ -334,8 +334,7 @@ Mais on sait aussi qu'à $\omega_0$, $\frac{S}{E} = \frac{A}{2m}$ or $\frac{S}{E
 
 \section{\itshape Calcul d'un correcteur et simulations}
 
-Nous avons désormais identifié les mesuré les éléments caractéristiques des deux systèmes. Cependant ces systèmes ne sont pas encore asservis.
-\\Désormais nous allons calculer un correcteur qui permettra d'asservir nos deux systèmes.
+Nous avons désormais identifié les mesuré les éléments caractéristiques des deux systèmes. Cependant ces systèmes ne sont pas encore asservis. Désormais nous allons calculer un correcteur qui permettra d'asservir nos deux systèmes.
 \\On désire asservir le système suivant : 
 \begin{center}
     \includegraphics{TP2 Simulink/syst_a_asservir.png}
@@ -416,12 +415,12 @@ Système 5 fois plus rapide $\Leftrightarrow$ \large$ t_{r5\%_{BF}} = \frac{t_{r
     \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/Reponse_indic_syst_1_K=4.97_tr5prct.png}
 
 \end{center}
-\newpage
+
 \normalsize L'erreur statique est représentée comme étant l'écart entre les deux curseurs horizontaux sur le premier graphe. On lit grâce aux valeurs du curseur que l'échelon atteint 1 et la réponse indicielle atteint 0.9 en régime permanent (la simulation est assez longue pour voir le régime permanent). L'erreur statique est donc de 10$\%$ en lisant la valeur de $\Delta Y$ et en multipliant par 100 cett valeur pour l'avoir en pourcent.
 \\De plus, on peut lire le temps de réponse à 5$\%$ sur le deuxième graphe : en effet, nous avons placé un curseur horizontal à 95$\%$ de la valeur finale de la réponse indicielle soit à $0.95\times0.9 = 0.855$.
 Il suffit ensuite de placer un premier curseur vertical au tout début de la simulation (ici à $t=0$) et d'en mettre un deuxième au niveau du croisement entre la réponse indicielle et le curseur horizontal. On trouve graphiquement $t_{r5\%} = 6.42$ms en lisant la valeur de $\Delta T$.
 \\Ainsi les valeurs trouvées en simulation sont quasiment égales (écart nul entre les erreurs statiques et écart de 0.03 ms entre les deux temps de réponse soit un écart de 0.46$\%$ qui peut s'expliquer par de légères erreurs de lecture graphique).
-
+\newpage
 \begin{itemize}
     \item \bf \large K = 54.7
 \end{itemize}
@@ -450,7 +449,23 @@ Les valeurs mesurées sont de nouveau très proches, (écart de 0.5$\%$ entre le
 \end{center}
 \normalsize Enfin, pour la dernière valeur de K, on mesure une erreur statique $\epsilon_s = 2.09\%$ et un temps de réponse à cinq pourcents $t_{r5\%} = 1.27$ms.
 Les valeurs mesurées sont égales pour les temps de réponse à cinq pourcents, et différentes de 4.5$\%$ pour les erreurs statiques. Cette erreur est plus élevée car le temps de réponse est très court en comparaison avec la durée de la réponse indicielle, ce qui rend difficile une lecture plus précise sur le graphe.
+\newpage
+Résumons toutes ces mesures dans un tableau : 
+\begin{center}
+    \begin{tabular}{ |p{1cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|}
 
+        \hline
+        $K$ & \normalsize  $t_{r5\%}$(ms) th. & $t_{r5\%}$(ms) sim. & $\epsilon_s$ ($\%$) th. & $\epsilon_s$ ($\%$) sim.\\
+        \hline
+        4.97 & 6.39 & 6.42 & 10 & 10\\
+        54.7 & 0.64 & 0.646 & 1 & 0.97\\
+        2.2& 12.8 & 12.98 & 20 & 20.1\\
+        27.2 & 1.27 & 1.27 & 2 & 2.09\\
+        
+        
+        \hline
+        \end{tabular}
+    \end{center}
 \subsubsection{\underline{\bf Correcteur intégral}}
 
 On considère désormais un correcteur intégral $C(p) = \frac{1}{T_ip}$
@@ -477,7 +492,8 @@ D'après les abaques, pour un premier dépassement à 5$\%$ : $z=0.7$ et $T_i = 
 Ainsi, on peut déterminer $\omega_{BF} = \sqrt{\frac{A}{T_i \tau}} = 33.526$ rad/s.
 \\Ensuite, d'après la deuxième abaque, pour $z=0.7$, on récupère le temps de réponse à 5$\%$ réduit :
 $t_{r5\%}\omega_{BF} = 3 \Leftrightarrow t_{r5\%} = \frac{3}{\omega_{BF}} = \frac{3}{33.526} = 89$ms.
-\\\\    \large \textit{ \textbf{Simulation}}
+\newpage
+\large \textit{ \textbf{Simulation}}
 \\\normalsize Le système simulé dans Simulink est relativement le même que pour le correcteur proportionnel : 
 \begin{center}
     \includegraphics[width = 15 cm]{TP2 Simulink/Syst_1/Syst1_Simulink_I.png}
@@ -578,4 +594,16 @@ On a bien un système qui devient de plus en plus stable quand $T_i$ augmente.
 
 On peut lire sur cette capture d'écran à la fois le temps de réponse à 5$\%$ et l'amplitude du premier dépassement. L'échelon atteint 1, tout comme la réponse indicielle donc l'erreur statique est nulle et le premier dépassement atteint 1.045, donc le premier dépassement dépasse de 4.5$\%$ le régime permanent. Le temps de réponse à 5$\%$ de ce système est de 86,8 ms.
 En comparaison, on attendait : $D_1 = 5\%$ et $t_{r5\%} = 89$ms. Cet écart peut s'expliquer par une mauvaise précision de lecture sur les abaques lors du calcul de $T_i$ pour avoir un premier dépassement à 5$\%$.
+\\\\\underline{\bf Conclusion :} Pour résumer, d'après toutes les simulations et calculs théoriques, on se rend compte que pour un correcteur proportionnel, plus sa valeur augmente, plus son erreur statique et son temps de réponse diminuent sans présenter de dépassement, alors que pour le correcteur intégral, son erreur statique est toujours nulle mais la FTBO du sytème devient un deuxième ordre donc la réponse indicielle contient des dépassement qui diminuent en amplitude si $T_i$ augmente mais alors le temps de réponse devient très grand (0.3 secondes pour $T_i = 10\tau$). Pour ce système, le correcteur proportionnel est meilleur que le correcteur intégral sans compter l'erreur statique (mais qui tend vers 0 lorsque K augmente). 
+\newpage
+\subsection{\itshape Système 2}
+\subsubsection{\underline{\itshape \bf Correcteur proportionnel}}
+On considère dans un premier temps un correcteur proportionnel $C(p) = K > 0$ et le système 2 qui est modélisé par une fonction de transfert du deuxième ordre $T(s) = F_2(s) = \frac{A}{1 + 2z\frac{p}{\omega_0} + (\frac{p}{\omega_0})^2}$.
+\begin{itemize}
+    \item Calculons la Fonction de Transfert en Boucle Fermée (FTBF) grâce à la formule de Black : 
+\end{itemize}
+
+\large $FTBF = \frac{K\times \frac{A}{1 + 2z\frac{p}{\omega_0} + (\frac{p}{\omega_0})^2}}{1 + K\times \frac{A}{1 + 2z\frac{p}{\omega_0} + (\frac{p}{\omega_0})^2}} = \frac{KA}{1 + 2z\frac{p}{\omega_0} + (\frac{p}{\omega_0})^2 + KA} = \frac{\frac{KA}{1 + KA}}{1 + \frac{2zp}{\omega_0(1+KA)}p + (\frac{p}{\omega_0\sqrt{1+KA}})^2} = \frac{K_{BF}}{1 + \frac{2z_{BF}p}{\omega_{0_{BF}}}+ (\frac{p}{\omega_{0_{BF}}})^2}$
+\\\\\normalsize Donc \large \fbox{$K_{BF} = \frac{KA}{1 + KA}$}, \fbox{$\omega_{0_{BF}} = \omega_0\sqrt{1 + KA}$} \normalsize et \large \fbox{$z_{BF} = \frac{z}{\sqrt{1 + KA}}$}.
+
 \end{document}
