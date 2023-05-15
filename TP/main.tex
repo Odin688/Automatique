@@ -466,6 +466,46 @@ Résumons toutes ces mesures dans un tableau :
         \hline
         \end{tabular}
     \end{center}
+
+
+
+\large \textit{ \textbf{Mise en oeuvre du correcteur proportionnel}}
+
+\normalsize Nous allons désormais câbler le correcteur physiquement et avoir la même démarche que pour les simulations précédentes, en comparant les différents résultat.
+Pour câbler le système, il nous faut un comparateur, qui sera obtenu à l'aide d'un circuit électronique. Dans notre cas, nous allons utilier un soustracteur dont le montage est  :
+\begin{center}
+    \includegraphics[width = 10 cm]{TP3/soustracteur.png}
+\end{center}
+Sa tension de sortie est alors : $V_s = \frac{R_2}{R_1}(V_2-V_1)$ où dans notre cas nous aurons $R_2 = R_1$ car on veut juste soustraire $V_2$ et $V_1$.
+Pour un correcteur proportionnel, nous allons utiliser un amplificateur avec un AOP. Voici son montage : 
+\begin{center}
+    \includegraphics[width = 10 cm]{TP3/ampli_non_inv.png}
+\end{center}
+Sa fonction de transfert est alors $\frac{V_s}{V_e} = 1 + \frac{R_1}{R_2}$. Mais avant de câbler le correcteur, nous allons câbler l'asservissement avec $C(p) = 1$, c'est à dire que le correcteur est juste un fil. 
+En ce qui concerne le câblage, nous relions une sortie du GBF au $V_+$ du soustracteur et aussi sur l'entrée 1 de l'oscilloscope. Ensuite, nous branchons la 1$^{e}$ sortie de la maquette sur le $V_-$ du soustracteur et sur l'entrée 2 de l'oscilloscope. Enfin, nous connectons la sortie du comparateur sur l'entrée de la maquette.
+Nous choisissons comme résistance pour le soustracteur $R= 5800 \Omega$. Voici la réponse indicielle de cet asservissement : 
+\begin{center}
+    \includegraphics[width = 19cm]{TP3/Syst_1/P/14_04_2023_gs_k1_.png}
+    \includegraphics[width = 19cm]{TP3/Syst_1/P/14_04_2023_tr5_k1.png}
+\end{center}
+
+On peut lire sur la première capture que l'erreur statique est de $100 - 63 = 37.1\%$ d'après les curseurs et sur le deuxième graphe on lit $t_{r5\%} = 22$ms.
+En comparaison, on attendait 35$\%$ d'erreur statique et 22.74 ms de temps de réponse. Les résultats mesurés sont très proches des résultats théoriques, l'écart entre l'erreur statique théorique et réelle peut s'expliquer par des imprécisions de mesures sur l'oscilloscope.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \subsubsection{\underline{\bf Correcteur intégral}}
 
 On considère désormais un correcteur intégral $C(p) = \frac{1}{T_ip}$

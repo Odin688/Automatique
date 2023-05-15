@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.5)  13 MAY 2023 21:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.5)  15 MAY 2023 21:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -643,423 +643,455 @@ Overfull \hbox (40.11836pt too wide) in paragraph at lines 447--449
  []
 
 [21 <./TP2 Simulink/Syst_1/Err_statique_syst_1_K=2.2.png> <./TP2 Simulink/Syst_1/tr5prct_syst_1_K=2.2.png>] [22 <./TP2 Simulink/Syst_1/err_stat_syst_1_K=27.2.png> <./TP2 Simulink/Syst_1/tr5prct_syst_1_K=27.2.png>]
+<TP3/soustracteur.png, id=225, 510.10574pt x 367.3725pt>
+File: TP3/soustracteur.png Graphic file (type png)
+<use TP3/soustracteur.png>
+Package pdftex.def Info: TP3/soustracteur.png  used on input line 477.
+(pdftex.def)             Requested size: 284.52756pt x 204.91437pt.
+<TP3/ampli_non_inv.png, id=226, 269.20575pt x 176.45924pt>
+File: TP3/ampli_non_inv.png Graphic file (type png)
+<use TP3/ampli_non_inv.png>
+Package pdftex.def Info: TP3/ampli_non_inv.png  used on input line 482.
+(pdftex.def)             Requested size: 284.52756pt x 186.51277pt.
+ [23 <./TP3/soustracteur.png> <./TP3/ampli_non_inv.png>]
+<TP3/Syst_1/P/14_04_2023_gs_k1_.png, id=233, 803.0pt x 504.88625pt>
+File: TP3/Syst_1/P/14_04_2023_gs_k1_.png Graphic file (type png)
+<use TP3/Syst_1/P/14_04_2023_gs_k1_.png>
+Package pdftex.def Info: TP3/Syst_1/P/14_04_2023_gs_k1_.png  used on input line 488.
+(pdftex.def)             Requested size: 540.60236pt x 339.92836pt.
+<TP3/Syst_1/P/14_04_2023_tr5_k1.png, id=234, 803.0pt x 504.88625pt>
+File: TP3/Syst_1/P/14_04_2023_tr5_k1.png Graphic file (type png)
+<use TP3/Syst_1/P/14_04_2023_tr5_k1.png>
+Package pdftex.def Info: TP3/Syst_1/P/14_04_2023_tr5_k1.png  used on input line 489.
+(pdftex.def)             Requested size: 540.60236pt x 339.92836pt.
+
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 488--490
+ [] 
+ []
+
+
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 488--490
+ [] 
+ []
+
+[24 <./TP3/Syst_1/P/14_04_2023_gs_k1_.png (PNG copy)>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 469.
+(hyperref)                removing `math shift' on input line 509.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@underline' on input line 469.
+(hyperref)                removing `\@@underline' on input line 509.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 469.
+(hyperref)                removing `\hbox' on input line 509.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 469.
+(hyperref)                removing `\mathsurround' on input line 509.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 469.
+(hyperref)                removing `\z@' on input line 509.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 469.
+(hyperref)                removing `math shift' on input line 509.
 
-[23]
-<TP2 Simulink/Syst_1/Syst1_Simulink_I.png, id=230, 651.6345pt x 226.446pt>
+[25 <./TP3/Syst_1/P/14_04_2023_tr5_k1.png (PNG copy)>] [26]
+<TP2 Simulink/Syst_1/Syst1_Simulink_I.png, id=249, 651.6345pt x 226.446pt>
 File: TP2 Simulink/Syst_1/Syst1_Simulink_I.png Graphic file (type png)
 <use TP2 Simulink/Syst_1/Syst1_Simulink_I.png>
-Package pdftex.def Info: TP2 Simulink/Syst_1/Syst1_Simulink_I.png  used on input line 499.
+Package pdftex.def Info: TP2 Simulink/Syst_1/Syst1_Simulink_I.png  used on input line 539.
 (pdftex.def)             Requested size: 426.79134pt x 148.31111pt.
-<TP2 Simulink/Syst_1/depassement_syst1_Ti=tau.png, id=231, 1156.32pt x 572.73975pt>
+<TP2 Simulink/Syst_1/depassement_syst1_Ti=tau.png, id=250, 1156.32pt x 572.73975pt>
 File: TP2 Simulink/Syst_1/depassement_syst1_Ti=tau.png Graphic file (type png)
 <use TP2 Simulink/Syst_1/depassement_syst1_Ti=tau.png>
-Package pdftex.def Info: TP2 Simulink/Syst_1/depassement_syst1_Ti=tau.png  used on input line 508.
+Package pdftex.def Info: TP2 Simulink/Syst_1/depassement_syst1_Ti=tau.png  used on input line 548.
 (pdftex.def)             Requested size: 540.60236pt x 267.76321pt.
-<TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=tau.png, id=232, 1156.32pt x 567.92175pt>
+<TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=tau.png, id=251, 1156.32pt x 567.92175pt>
 File: TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=tau.png Graphic file (type png)
 <use TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=tau.png>
-Package pdftex.def Info: TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=tau.png  used on input line 509.
+Package pdftex.def Info: TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=tau.png  used on input line 549.
 (pdftex.def)             Requested size: 540.60236pt x 265.51074pt.
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 508--510
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 548--550
  [] 
  []
 
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 508--510
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 548--550
  [] 
  []
 
-[24 <./TP2 Simulink/Syst_1/Syst1_Simulink_I.png> <./TP2 Simulink/Syst_1/depassement_syst1_Ti=tau.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 511--517
+[27 <./TP2 Simulink/Syst_1/Syst1_Simulink_I.png> <./TP2 Simulink/Syst_1/depassement_syst1_Ti=tau.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 551--557
 
  []
 
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 525.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 565.
 (c:/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-<TP2 Simulink/Syst_1/Ti=tau_syst_1_Black.png, id=241, 1040.688pt x 552.8655pt>
+<TP2 Simulink/Syst_1/Ti=tau_syst_1_Black.png, id=260, 1040.688pt x 552.8655pt>
 File: TP2 Simulink/Syst_1/Ti=tau_syst_1_Black.png Graphic file (type png)
 <use TP2 Simulink/Syst_1/Ti=tau_syst_1_Black.png>
-Package pdftex.def Info: TP2 Simulink/Syst_1/Ti=tau_syst_1_Black.png  used on input line 534.
+Package pdftex.def Info: TP2 Simulink/Syst_1/Ti=tau_syst_1_Black.png  used on input line 574.
 (pdftex.def)             Requested size: 540.60236pt x 287.20488pt.
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 534--535
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 574--575
  [] 
  []
 
-[25 <./TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=tau.png>] [26 <./TP2 Simulink/Syst_1/Ti=tau_syst_1_Black.png>]
-<TP2 Simulink/Syst_1/depassement_syst_1_Ti=5tau.png, id=255, 1156.32pt x 573.342pt>
+[28 <./TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=tau.png>] [29 <./TP2 Simulink/Syst_1/Ti=tau_syst_1_Black.png>]
+<TP2 Simulink/Syst_1/depassement_syst_1_Ti=5tau.png, id=273, 1156.32pt x 573.342pt>
 File: TP2 Simulink/Syst_1/depassement_syst_1_Ti=5tau.png Graphic file (type png)
 <use TP2 Simulink/Syst_1/depassement_syst_1_Ti=5tau.png>
-Package pdftex.def Info: TP2 Simulink/Syst_1/depassement_syst_1_Ti=5tau.png  used on input line 543.
+Package pdftex.def Info: TP2 Simulink/Syst_1/depassement_syst_1_Ti=5tau.png  used on input line 583.
 (pdftex.def)             Requested size: 540.60236pt x 268.04477pt.
-<TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=5tau.png, id=256, 1156.32pt x 575.14874pt>
+<TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=5tau.png, id=274, 1156.32pt x 575.14874pt>
 File: TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=5tau.png Graphic file (type png)
 <use TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=5tau.png>
-Package pdftex.def Info: TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=5tau.png  used on input line 544.
+Package pdftex.def Info: TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=5tau.png  used on input line 584.
 (pdftex.def)             Requested size: 540.60236pt x 268.88945pt.
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 543--545
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 583--585
  [] 
  []
 
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 543--545
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 583--585
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 547--552
+Underfull \hbox (badness 10000) in paragraph at lines 587--592
 
  []
 
-[27 <./TP2 Simulink/Syst_1/depassement_syst_1_Ti=5tau.png> <./TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=5tau.png>]
-<TP2 Simulink/Syst_1/Ti=5tau_syst_1_Black.png, id=263, 971.42924pt x 540.21825pt>
+[30 <./TP2 Simulink/Syst_1/depassement_syst_1_Ti=5tau.png> <./TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=5tau.png>]
+<TP2 Simulink/Syst_1/Ti=5tau_syst_1_Black.png, id=281, 971.42924pt x 540.21825pt>
 File: TP2 Simulink/Syst_1/Ti=5tau_syst_1_Black.png Graphic file (type png)
 <use TP2 Simulink/Syst_1/Ti=5tau_syst_1_Black.png>
-Package pdftex.def Info: TP2 Simulink/Syst_1/Ti=5tau_syst_1_Black.png  used on input line 557.
+Package pdftex.def Info: TP2 Simulink/Syst_1/Ti=5tau_syst_1_Black.png  used on input line 597.
 (pdftex.def)             Requested size: 540.60236pt x 300.64073pt.
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 557--558
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 597--598
  [] 
  []
 
-[28 <./TP2 Simulink/Syst_1/Ti=5tau_syst_1_Black.png>]
-<TP2 Simulink/Syst_1/tr5prct_syst1_Ti=10tau.png, id=269, 1156.32pt x 573.342pt>
+[31 <./TP2 Simulink/Syst_1/Ti=5tau_syst_1_Black.png>]
+<TP2 Simulink/Syst_1/tr5prct_syst1_Ti=10tau.png, id=288, 1156.32pt x 573.342pt>
 File: TP2 Simulink/Syst_1/tr5prct_syst1_Ti=10tau.png Graphic file (type png)
 <use TP2 Simulink/Syst_1/tr5prct_syst1_Ti=10tau.png>
-Package pdftex.def Info: TP2 Simulink/Syst_1/tr5prct_syst1_Ti=10tau.png  used on input line 567.
+Package pdftex.def Info: TP2 Simulink/Syst_1/tr5prct_syst1_Ti=10tau.png  used on input line 607.
 (pdftex.def)             Requested size: 540.60236pt x 268.04477pt.
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 567--568
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 607--608
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 570--575
+Underfull \hbox (badness 10000) in paragraph at lines 610--615
 
  []
 
-<TP2 Simulink/Syst_1/Ti=10tau_syst_1_Black.png, id=270, 979.2585pt x 520.94624pt>
+<TP2 Simulink/Syst_1/Ti=10tau_syst_1_Black.png, id=289, 979.2585pt x 520.94624pt>
 File: TP2 Simulink/Syst_1/Ti=10tau_syst_1_Black.png Graphic file (type png)
 <use TP2 Simulink/Syst_1/Ti=10tau_syst_1_Black.png>
-Package pdftex.def Info: TP2 Simulink/Syst_1/Ti=10tau_syst_1_Black.png  used on input line 580.
+Package pdftex.def Info: TP2 Simulink/Syst_1/Ti=10tau_syst_1_Black.png  used on input line 620.
 (pdftex.def)             Requested size: 540.60236pt x 287.58649pt.
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 580--581
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 620--621
  [] 
  []
 
-[29 <./TP2 Simulink/Syst_1/tr5prct_syst1_Ti=10tau.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 582--591
+[32 <./TP2 Simulink/Syst_1/tr5prct_syst1_Ti=10tau.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 622--631
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 582--591
+Underfull \hbox (badness 10000) in paragraph at lines 622--631
 
  []
 
-<TP2 Simulink/Syst_1/dep5prct_syst1.png, id=276, 1156.32pt x 572.73975pt>
+<TP2 Simulink/Syst_1/dep5prct_syst1.png, id=295, 1156.32pt x 572.73975pt>
 File: TP2 Simulink/Syst_1/dep5prct_syst1.png Graphic file (type png)
 <use TP2 Simulink/Syst_1/dep5prct_syst1.png>
-Package pdftex.def Info: TP2 Simulink/Syst_1/dep5prct_syst1.png  used on input line 592.
+Package pdftex.def Info: TP2 Simulink/Syst_1/dep5prct_syst1.png  used on input line 632.
 (pdftex.def)             Requested size: 540.60236pt x 267.76321pt.
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 592--593
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 632--633
  [] 
  []
 
-[30 <./TP2 Simulink/Syst_1/Ti=10tau_syst_1_Black.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 595--598
+[33 <./TP2 Simulink/Syst_1/Ti=10tau_syst_1_Black.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 635--638
 
  []
 
-[31 <./TP2 Simulink/Syst_1/dep5prct_syst1.png>]
+[34 <./TP2 Simulink/Syst_1/dep5prct_syst1.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 600.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@underline' on input line 600.
+(hyperref)                removing `math shift' on input line 640.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 600.
+(hyperref)                removing `\@@underline' on input line 640.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 600.
+(hyperref)                removing `\hbox' on input line 640.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 600.
+(hyperref)                removing `\mathsurround' on input line 640.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 600.
+(hyperref)                removing `\z@' on input line 640.
 
 
-Overfull \hbox (35.13792pt too wide) in paragraph at lines 606--609
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 640.
+
+
+Overfull \hbox (35.13792pt too wide) in paragraph at lines 646--649
 []$\OML/cmm/m/it/14.4 FTBF \OT1/cmr/m/n/14.4 = [] = [] = [] = []$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 606--609
+Underfull \hbox (badness 10000) in paragraph at lines 646--649
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 606--609
+Underfull \hbox (badness 10000) in paragraph at lines 646--649
 
  []
 
-[32]
-Underfull \hbox (badness 10000) in paragraph at lines 647--651
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 687--691
 
  []
 
-<TP2 Simulink/Syst_2/Syst_2_Simunlink_P.png, id=293, 747.9945pt x 264.99pt>
+<TP2 Simulink/Syst_2/Syst_2_Simunlink_P.png, id=311, 747.9945pt x 264.99pt>
 File: TP2 Simulink/Syst_2/Syst_2_Simunlink_P.png Graphic file (type png)
 <use TP2 Simulink/Syst_2/Syst_2_Simunlink_P.png>
-Package pdftex.def Info: TP2 Simulink/Syst_2/Syst_2_Simunlink_P.png  used on input line 652.
+Package pdftex.def Info: TP2 Simulink/Syst_2/Syst_2_Simunlink_P.png  used on input line 692.
 (pdftex.def)             Requested size: 426.79134pt x 151.19951pt.
-<TP2 Simulink/Syst_2/Depass_4_1_K=4.5.png, id=294, 1155.1155pt x 567.92175pt>
+<TP2 Simulink/Syst_2/Depass_4_1_K=4.5.png, id=312, 1155.1155pt x 567.92175pt>
 File: TP2 Simulink/Syst_2/Depass_4_1_K=4.5.png Graphic file (type png)
 <use TP2 Simulink/Syst_2/Depass_4_1_K=4.5.png>
-Package pdftex.def Info: TP2 Simulink/Syst_2/Depass_4_1_K=4.5.png  used on input line 658.
+Package pdftex.def Info: TP2 Simulink/Syst_2/Depass_4_1_K=4.5.png  used on input line 698.
 (pdftex.def)             Requested size: 540.60236pt x 265.7967pt.
-<TP2 Simulink/Syst_2/tr5prct_4_1_K=4.5.png, id=295, 1154.51324pt x 570.33075pt>
+<TP2 Simulink/Syst_2/tr5prct_4_1_K=4.5.png, id=313, 1154.51324pt x 570.33075pt>
 File: TP2 Simulink/Syst_2/tr5prct_4_1_K=4.5.png Graphic file (type png)
 <use TP2 Simulink/Syst_2/tr5prct_4_1_K=4.5.png>
-Package pdftex.def Info: TP2 Simulink/Syst_2/tr5prct_4_1_K=4.5.png  used on input line 659.
+Package pdftex.def Info: TP2 Simulink/Syst_2/tr5prct_4_1_K=4.5.png  used on input line 699.
 (pdftex.def)             Requested size: 540.60236pt x 267.05469pt.
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 658--660
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 698--700
  [] 
  []
 
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 658--660
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 698--700
  [] 
  []
 
-[33 <./TP2 Simulink/Syst_2/Syst_2_Simunlink_P.png> <./TP2 Simulink/Syst_2/Depass_4_1_K=4.5.png>] [34 <./TP2 Simulink/Syst_2/tr5prct_4_1_K=4.5.png>]
-<TP2 Simulink/Syst_2/depassement_4_1_K=24.5.png, id=307, 1156.32pt x 573.342pt>
+[36 <./TP2 Simulink/Syst_2/Syst_2_Simunlink_P.png> <./TP2 Simulink/Syst_2/Depass_4_1_K=4.5.png>] [37 <./TP2 Simulink/Syst_2/tr5prct_4_1_K=4.5.png>]
+<TP2 Simulink/Syst_2/depassement_4_1_K=24.5.png, id=326, 1156.32pt x 573.342pt>
 File: TP2 Simulink/Syst_2/depassement_4_1_K=24.5.png Graphic file (type png)
 <use TP2 Simulink/Syst_2/depassement_4_1_K=24.5.png>
-Package pdftex.def Info: TP2 Simulink/Syst_2/depassement_4_1_K=24.5.png  used on input line 670.
+Package pdftex.def Info: TP2 Simulink/Syst_2/depassement_4_1_K=24.5.png  used on input line 710.
 (pdftex.def)             Requested size: 540.60236pt x 268.04477pt.
-<TP2 Simulink/Syst_2/tr5prct_4.1_K=24.5.png, id=308, 1156.32pt x 572.1375pt>
+<TP2 Simulink/Syst_2/tr5prct_4.1_K=24.5.png, id=327, 1156.32pt x 572.1375pt>
 File: TP2 Simulink/Syst_2/tr5prct_4.1_K=24.5.png Graphic file (type png)
 <use TP2 Simulink/Syst_2/tr5prct_4.1_K=24.5.png>
-Package pdftex.def Info: TP2 Simulink/Syst_2/tr5prct_4.1_K=24.5.png  used on input line 671.
+Package pdftex.def Info: TP2 Simulink/Syst_2/tr5prct_4.1_K=24.5.png  used on input line 711.
 (pdftex.def)             Requested size: 540.60236pt x 267.48164pt.
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 670--672
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 710--712
  [] 
  []
 
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 670--672
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 710--712
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 673--678
+Underfull \hbox (badness 10000) in paragraph at lines 713--718
 
  []
 
-[35 <./TP2 Simulink/Syst_2/depassement_4_1_K=24.5.png> <./TP2 Simulink/Syst_2/tr5prct_4.1_K=24.5.png>] [36]
+[38 <./TP2 Simulink/Syst_2/depassement_4_1_K=24.5.png> <./TP2 Simulink/Syst_2/tr5prct_4.1_K=24.5.png>] [39]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 679.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@underline' on input line 679.
+(hyperref)                removing `math shift' on input line 719.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 679.
+(hyperref)                removing `\@@underline' on input line 719.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 679.
+(hyperref)                removing `\hbox' on input line 719.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 679.
+(hyperref)                removing `\mathsurround' on input line 719.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 679.
+(hyperref)                removing `\z@' on input line 719.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 681--684
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 719.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 721--724
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 681--684
+Underfull \hbox (badness 10000) in paragraph at lines 721--724
 
  []
 
-<TP2 Simulink/Syst_2/Syst_2_Simulink_I.png, id=319, 763.05075pt x 242.1045pt>
+<TP2 Simulink/Syst_2/Syst_2_Simulink_I.png, id=338, 763.05075pt x 242.1045pt>
 File: TP2 Simulink/Syst_2/Syst_2_Simulink_I.png Graphic file (type png)
 <use TP2 Simulink/Syst_2/Syst_2_Simulink_I.png>
-Package pdftex.def Info: TP2 Simulink/Syst_2/Syst_2_Simulink_I.png  used on input line 685.
+Package pdftex.def Info: TP2 Simulink/Syst_2/Syst_2_Simulink_I.png  used on input line 725.
 (pdftex.def)             Requested size: 426.79134pt x 135.41505pt.
-<TP2 Simulink/Syst_2/tr5prct_4.2_Ti=20_sur_omega0.png, id=320, 1156.32pt x 573.342pt>
+<TP2 Simulink/Syst_2/tr5prct_4.2_Ti=20_sur_omega0.png, id=339, 1156.32pt x 573.342pt>
 File: TP2 Simulink/Syst_2/tr5prct_4.2_Ti=20_sur_omega0.png Graphic file (type png)
 <use TP2 Simulink/Syst_2/tr5prct_4.2_Ti=20_sur_omega0.png>
-Package pdftex.def Info: TP2 Simulink/Syst_2/tr5prct_4.2_Ti=20_sur_omega0.png  used on input line 694.
+Package pdftex.def Info: TP2 Simulink/Syst_2/tr5prct_4.2_Ti=20_sur_omega0.png  used on input line 734.
 (pdftex.def)             Requested size: 540.60236pt x 268.04477pt.
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 694--695
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 734--735
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 700--702
+Underfull \hbox (badness 10000) in paragraph at lines 740--742
 
  []
 
-[37 <./TP2 Simulink/Syst_2/Syst_2_Simulink_I.png> <./TP2 Simulink/Syst_2/tr5prct_4.2_Ti=20_sur_omega0.png>]
-<TP2 Simulink/Syst_2/nichols_Ti=20_sur_omega0.png, id=329, 1003.95074pt x 534.19576pt>
+[40 <./TP2 Simulink/Syst_2/Syst_2_Simulink_I.png> <./TP2 Simulink/Syst_2/tr5prct_4.2_Ti=20_sur_omega0.png>]
+<TP2 Simulink/Syst_2/nichols_Ti=20_sur_omega0.png, id=347, 1003.95074pt x 534.19576pt>
 File: TP2 Simulink/Syst_2/nichols_Ti=20_sur_omega0.png Graphic file (type png)
 <use TP2 Simulink/Syst_2/nichols_Ti=20_sur_omega0.png>
-Package pdftex.def Info: TP2 Simulink/Syst_2/nichols_Ti=20_sur_omega0.png  used on input line 708.
+Package pdftex.def Info: TP2 Simulink/Syst_2/nichols_Ti=20_sur_omega0.png  used on input line 748.
 (pdftex.def)             Requested size: 540.60236pt x 287.6463pt.
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 708--709
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 748--749
  [] 
  []
 
-[38 <./TP2 Simulink/Syst_2/nichols_Ti=20_sur_omega0.png>]
-<TP2 Simulink/Syst_2/tr5prct_4.2_Ti=10_sur_omega0.png, id=335, 1156.32pt x 570.33075pt>
+[41 <./TP2 Simulink/Syst_2/nichols_Ti=20_sur_omega0.png>]
+<TP2 Simulink/Syst_2/tr5prct_4.2_Ti=10_sur_omega0.png, id=353, 1156.32pt x 570.33075pt>
 File: TP2 Simulink/Syst_2/tr5prct_4.2_Ti=10_sur_omega0.png Graphic file (type png)
 <use TP2 Simulink/Syst_2/tr5prct_4.2_Ti=10_sur_omega0.png>
-Package pdftex.def Info: TP2 Simulink/Syst_2/tr5prct_4.2_Ti=10_sur_omega0.png  used on input line 716.
+Package pdftex.def Info: TP2 Simulink/Syst_2/tr5prct_4.2_Ti=10_sur_omega0.png  used on input line 756.
 (pdftex.def)             Requested size: 540.60236pt x 266.63696pt.
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 716--717
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 756--757
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 719--722
+Underfull \hbox (badness 10000) in paragraph at lines 759--762
 
  []
 
-[39 <./TP2 Simulink/Syst_2/tr5prct_4.2_Ti=10_sur_omega0.png>]
-<TP2 Simulink/Syst_2/nichols_Ti=10_sur_omega0.png, id=341, 1011.78pt x 527.571pt>
+[42 <./TP2 Simulink/Syst_2/tr5prct_4.2_Ti=10_sur_omega0.png>]
+<TP2 Simulink/Syst_2/nichols_Ti=10_sur_omega0.png, id=359, 1011.78pt x 527.571pt>
 File: TP2 Simulink/Syst_2/nichols_Ti=10_sur_omega0.png Graphic file (type png)
 <use TP2 Simulink/Syst_2/nichols_Ti=10_sur_omega0.png>
-Package pdftex.def Info: TP2 Simulink/Syst_2/nichols_Ti=10_sur_omega0.png  used on input line 729.
+Package pdftex.def Info: TP2 Simulink/Syst_2/nichols_Ti=10_sur_omega0.png  used on input line 769.
 (pdftex.def)             Requested size: 540.60236pt x 281.88947pt.
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 729--730
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 769--770
  [] 
  []
 
-[40 <./TP2 Simulink/Syst_2/nichols_Ti=10_sur_omega0.png>]
-<TP2 Simulink/Syst_2/tr5prct_et_depassement_4.2_5_sur_omega0.png, id=347, 1156.32pt x 573.342pt>
+[43 <./TP2 Simulink/Syst_2/nichols_Ti=10_sur_omega0.png>]
+<TP2 Simulink/Syst_2/tr5prct_et_depassement_4.2_5_sur_omega0.png, id=366, 1156.32pt x 573.342pt>
 File: TP2 Simulink/Syst_2/tr5prct_et_depassement_4.2_5_sur_omega0.png Graphic file (type png)
 <use TP2 Simulink/Syst_2/tr5prct_et_depassement_4.2_5_sur_omega0.png>
-Package pdftex.def Info: TP2 Simulink/Syst_2/tr5prct_et_depassement_4.2_5_sur_omega0.png  used on input line 737.
+Package pdftex.def Info: TP2 Simulink/Syst_2/tr5prct_et_depassement_4.2_5_sur_omega0.png  used on input line 777.
 (pdftex.def)             Requested size: 540.60236pt x 268.04477pt.
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 737--738
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 777--778
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 740--743
+Underfull \hbox (badness 10000) in paragraph at lines 780--783
 
  []
 
-[41 <./TP2 Simulink/Syst_2/tr5prct_et_depassement_4.2_5_sur_omega0.png>]
-<TP2 Simulink/Syst_2/nichols_4.2_Ti=5_sur_omega0.png, id=353, 982.872pt x 542.025pt>
+[44 <./TP2 Simulink/Syst_2/tr5prct_et_depassement_4.2_5_sur_omega0.png>]
+<TP2 Simulink/Syst_2/nichols_4.2_Ti=5_sur_omega0.png, id=372, 982.872pt x 542.025pt>
 File: TP2 Simulink/Syst_2/nichols_4.2_Ti=5_sur_omega0.png Graphic file (type png)
 <use TP2 Simulink/Syst_2/nichols_4.2_Ti=5_sur_omega0.png>
-Package pdftex.def Info: TP2 Simulink/Syst_2/nichols_4.2_Ti=5_sur_omega0.png  used on input line 750.
+Package pdftex.def Info: TP2 Simulink/Syst_2/nichols_4.2_Ti=5_sur_omega0.png  used on input line 790.
 (pdftex.def)             Requested size: 540.60236pt x 298.13948pt.
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 750--751
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 790--791
  [] 
  []
 
-[42 <./TP2 Simulink/Syst_2/nichols_4.2_Ti=5_sur_omega0.png>]
-<TP2 Simulink/Syst_2/4.2_instable_Ti=1_sur_omega0.png, id=359, 1156.32pt x 567.3195pt>
+[45 <./TP2 Simulink/Syst_2/nichols_4.2_Ti=5_sur_omega0.png>]
+<TP2 Simulink/Syst_2/4.2_instable_Ti=1_sur_omega0.png, id=378, 1156.32pt x 567.3195pt>
 File: TP2 Simulink/Syst_2/4.2_instable_Ti=1_sur_omega0.png Graphic file (type png)
 <use TP2 Simulink/Syst_2/4.2_instable_Ti=1_sur_omega0.png>
-Package pdftex.def Info: TP2 Simulink/Syst_2/4.2_instable_Ti=1_sur_omega0.png  used on input line 758.
+Package pdftex.def Info: TP2 Simulink/Syst_2/4.2_instable_Ti=1_sur_omega0.png  used on input line 798.
 (pdftex.def)             Requested size: 540.60236pt x 265.22917pt.
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 758--759
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 798--799
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 762--764
+Underfull \hbox (badness 10000) in paragraph at lines 802--804
 
  []
 
-[43 <./TP2 Simulink/Syst_2/4.2_instable_Ti=1_sur_omega0.png>]
-<TP2 Simulink/Syst_2/nichols_4.2_Ti=1_sur_omega0.png, id=366, 1000.33725pt x 524.55975pt>
+[46 <./TP2 Simulink/Syst_2/4.2_instable_Ti=1_sur_omega0.png>]
+<TP2 Simulink/Syst_2/nichols_4.2_Ti=1_sur_omega0.png, id=384, 1000.33725pt x 524.55975pt>
 File: TP2 Simulink/Syst_2/nichols_4.2_Ti=1_sur_omega0.png Graphic file (type png)
 <use TP2 Simulink/Syst_2/nichols_4.2_Ti=1_sur_omega0.png>
-Package pdftex.def Info: TP2 Simulink/Syst_2/nichols_4.2_Ti=1_sur_omega0.png  used on input line 771.
+Package pdftex.def Info: TP2 Simulink/Syst_2/nichols_4.2_Ti=1_sur_omega0.png  used on input line 811.
 (pdftex.def)             Requested size: 540.60236pt x 283.48215pt.
 
-Overfull \hbox (40.11836pt too wide) in paragraph at lines 771--772
+Overfull \hbox (40.11836pt too wide) in paragraph at lines 811--812
  [] 
  []
 
-[44 <./TP2 Simulink/Syst_2/nichols_4.2_Ti=1_sur_omega0.png>] (./main.aux)
+[47 <./TP2 Simulink/Syst_2/nichols_4.2_Ti=1_sur_omega0.png>] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 2C60A531717E87674067794028ED2DED;2803.
  ) 
 Here is how much of TeX's memory you used:
- 10123 strings out of 476017
- 166548 string characters out of 5793767
+ 10156 strings out of 476017
+ 167439 string characters out of 5793767
  1872660 words of memory out of 5000000
- 30335 multiletter control sequences out of 15000+600000
+ 30359 multiletter control sequences out of 15000+600000
  533121 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,76p,843b,544s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbi2074.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on main.pdf (44 pages, 2301035 bytes).
+Output written on main.pdf (47 pages, 2377509 bytes).
 PDF statistics:
- 521 PDF objects out of 1000 (max. 8388607)
- 323 compressed objects within 4 object streams
- 61 named destinations out of 1000 (max. 500000)
- 354 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 539 PDF objects out of 1000 (max. 8388607)
+ 332 compressed objects within 4 object streams
+ 64 named destinations out of 1000 (max. 500000)
+ 374 words of extra memory for PDF output out of 10000 (max. 10000000)
 
