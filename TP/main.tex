@@ -8,8 +8,6 @@
 \usepackage{bm}
 \usepackage{xcolor}
 \usepackage{soul}
-\usepackage{subfigure}
-\usepackage{subcaption}
 \geometry{top=15mm, bottom=20mm, left=20mm, right=20mm} % définit les marges
 \renewcommand{\baselinestretch}{1.25}  % taille de l'interligne
 
@@ -666,17 +664,18 @@ On peut lire sur cette capture d'écran à la fois le temps de réponse à 5$\%$
 En comparaison, on attendait : $D_1 = 5\%$ et $t_{r5\%} = 89$ms. Cet écart peut s'expliquer par une mauvaise précision de lecture sur les abaques lors du calcul de $T_i$ pour avoir un premier dépassement à 5$\%$.
 \\\\\underline{\bf Conclusion :} Pour résumer, d'après toutes les simulations et calculs théoriques, on se rend compte que pour un correcteur proportionnel, plus sa valeur augmente, plus son erreur statique et son temps de réponse diminuent sans présenter de dépassement, alors que pour le correcteur intégral, son erreur statique est toujours nulle mais la FTBO du sytème devient un deuxième ordre donc la réponse indicielle contient des dépassement qui diminuent en amplitude si $T_i$ augmente mais alors le temps de réponse devient très grand (0.3 secondes pour $T_i = 10\tau$). Pour ce système, le correcteur proportionnel est meilleur que le correcteur intégral sans compter l'erreur statique (mais qui tend vers 0 lorsque K augmente). 
 \newpage \large \textit{\textbf{Mise en oeuvre du correcteur intégral}}
-
-Nous allons désormais remplacer le correcteur proportionnel précédemment câblé par un intégrateur monté en série avec un inverseur et leurs montages sont :
-\begin{figure}
+\\Nous allons désormais remplacer le correcteur proportionnel précédemment câblé par un intégrateur monté en série avec un inverseur et leurs montages sont :
+\begin{figure}[!h]
     \centering
-    \includegraphics[scale=0.8]{TP3/integrateur.png}
+    \includegraphics[width = 8 cm]{TP3/integrateur.png}
     \caption{\itshape Montage d'un intégrateur}
-    \includegraphics[scale=0.7]{TP3/inverseur.png}
+\end{figure}
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width = 8cm]{TP3/inverseur.png}
     \caption{\itshape Montage d'un inverseur}
 \end{figure}
-
-\newpage
+Nous avons besoin d'in intégrateur non-inverseur or, la figure 1 représente un montage qui a comme fonction de transfert $\frac{V_s}{V_e} = -\frac{1}{RCj\omega}$. Il faut donc bien rajouter un amplificateur inverseur avec $R_2=R_1$ pour compenser la négativité de l'inverseur.
 \subsection{\itshape Système 2}
 \subsubsection{\underline{\itshape \bf Correcteur proportionnel}}
 On considère dans un premier temps un correcteur proportionnel $C(p) = K > 0$ et le système 2 qui est modélisé par une fonction de transfert du deuxième ordre $T(s) = F_2(s) = \frac{A}{1 + 2z\frac{p}{\omega_0} + (\frac{p}{\omega_0})^2}$.
