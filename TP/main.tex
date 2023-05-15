@@ -8,6 +8,8 @@
 \usepackage{bm}
 \usepackage{xcolor}
 \usepackage{soul}
+\usepackage{subfigure}
+\usepackage{subcaption}
 \geometry{top=15mm, bottom=20mm, left=20mm, right=20mm} % définit les marges
 \renewcommand{\baselinestretch}{1.25}  % taille de l'interligne
 
@@ -491,18 +493,46 @@ Nous choisissons comme résistance pour le soustracteur $R= 5800 \Omega$. Voici 
 
 On peut lire sur la première capture que l'erreur statique est de $100 - 63 = 37.1\%$ d'après les curseurs et sur le deuxième graphe on lit $t_{r5\%} = 22$ms.
 En comparaison, on attendait 35$\%$ d'erreur statique et 22.74 ms de temps de réponse. Les résultats mesurés sont très proches des résultats théoriques, l'écart entre l'erreur statique théorique et réelle peut s'expliquer par des imprécisions de mesures sur l'oscilloscope.
+Désormais nous câblons le correcteur proportionnel en série avec le comparateur, avec la sortie du comparateur branchée maintenant sur $V_+$ de l'amplificateur et la sortie de celui-ci reliée à l'entrée de la maquette.
+\newpage \begin{itemize}
+\item \bf \large K = 4.97
+\end{itemize}
+\large VALEURS PRISES POUR R ET VALEURS ATTENDUES SI K experimental différent de K théorique
+\begin{center}
+    \includegraphics[width = 18 cm]{TP3/Syst_1/P/14_04_2023_es_k5.png}
+    \includegraphics[width = 18 cm]{TP3/Syst_1/P/14_04_2023_tr_k5.png}
+\end{center}
+\large INTERPRETATION
+\begin{itemize}
+\item \bf \large K = 54.7
+\end{itemize}
+\large VALEURS PRISES POUR R ET VALEURS ATTENDUES SI K experimental différent de K théorique
+\begin{center}
+    \includegraphics[width = 18 cm]{TP3/Syst_1/P/14_04_2023_depk55.png}
+    \includegraphics[width = 18 cm]{TP3/Syst_1/P/14_04_2023_tr_k5.png}
+\end{center}
+\large INTERPRETATION
+\begin{itemize}
+\item \bf \large K = 2.2
+\end{itemize}
+\large VALEURS PRISES POUR R ET VALEURS ATTENDUES SI K experimental différent de K théorique
+\begin{center}
+    \includegraphics[width = 18 cm]{TP3/Syst_1/P/err_stat_K2_2_syst1.png}
+    \includegraphics[width = 18 cm]{TP3/Syst_1/P/tr5prct_syst1_K2_2.png}
+\end{center}
+\large INTERPRETATION
+\begin{itemize}
+\item \bf \large K = 27.2
+\end{itemize}
+\large VALEURS PRISES POUR R ET VALEURS ATTENDUES SI K experimental différent de K théorique
+\begin{center}
+    \includegraphics[width = 18 cm]{TP3/Syst_1/P/k27_2_es.png}
+    \includegraphics[width = 18 cm]{TP3/Syst_1/P/k27_2_dep.png}
+    \includegraphics[width = 18 cm]{TP3/Syst_1/P/k27_2_tr.png}
+\end{center}
+\large INTERPRETATION
 
-
-
-
-
-
-
-
-
-
-
-
+\normalsize Conclure quant à l’influence de K sur la précision statique et sur la dynamique du système.
 
 
 
@@ -635,6 +665,17 @@ On a bien un système qui devient de plus en plus stable quand $T_i$ augmente.
 On peut lire sur cette capture d'écran à la fois le temps de réponse à 5$\%$ et l'amplitude du premier dépassement. L'échelon atteint 1, tout comme la réponse indicielle donc l'erreur statique est nulle et le premier dépassement atteint 1.045, donc le premier dépassement dépasse de 4.5$\%$ le régime permanent. Le temps de réponse à 5$\%$ de ce système est de 86,8 ms.
 En comparaison, on attendait : $D_1 = 5\%$ et $t_{r5\%} = 89$ms. Cet écart peut s'expliquer par une mauvaise précision de lecture sur les abaques lors du calcul de $T_i$ pour avoir un premier dépassement à 5$\%$.
 \\\\\underline{\bf Conclusion :} Pour résumer, d'après toutes les simulations et calculs théoriques, on se rend compte que pour un correcteur proportionnel, plus sa valeur augmente, plus son erreur statique et son temps de réponse diminuent sans présenter de dépassement, alors que pour le correcteur intégral, son erreur statique est toujours nulle mais la FTBO du sytème devient un deuxième ordre donc la réponse indicielle contient des dépassement qui diminuent en amplitude si $T_i$ augmente mais alors le temps de réponse devient très grand (0.3 secondes pour $T_i = 10\tau$). Pour ce système, le correcteur proportionnel est meilleur que le correcteur intégral sans compter l'erreur statique (mais qui tend vers 0 lorsque K augmente). 
+\newpage \large \textit{\textbf{Mise en oeuvre du correcteur intégral}}
+
+Nous allons désormais remplacer le correcteur proportionnel précédemment câblé par un intégrateur monté en série avec un inverseur et leurs montages sont :
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.8]{TP3/integrateur.png}
+    \caption{\itshape Montage d'un intégrateur}
+    \includegraphics[scale=0.7]{TP3/inverseur.png}
+    \caption{\itshape Montage d'un inverseur}
+\end{figure}
+
 \newpage
 \subsection{\itshape Système 2}
 \subsubsection{\underline{\itshape \bf Correcteur proportionnel}}
