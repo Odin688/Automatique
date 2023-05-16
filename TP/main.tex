@@ -400,7 +400,7 @@ Système 5 fois plus rapide $\Leftrightarrow$ \large$ t_{r5\%_{BF}} = \frac{t_{r
         \end{tabular}
     \end{center}
 \newpage 
-\large \textit{ \textbf{Simulation}}
+\Large \textit{ \textbf{Simulation}}
 \\\\\normalsize Dans cette partie, nous avons utilisé le logiciel "Simulink" pour tracer la réponse indicielle de l'asservissement pour les cinq valeurs de K calculées précédemment. Nous avons utilisé ce système pour les différentes simulations : 
 \begin{center}
     \includegraphics[width = 15 cm]{TP2 Simulink/Syst_1/Syst_1_Simulink_P.png}
@@ -469,28 +469,29 @@ Résumons toutes ces mesures dans un tableau :
 
 
 
-\large \textit{ \textbf{Mise en oeuvre du correcteur proportionnel}}
+\Large \textit{ \textbf{Mise en oeuvre du correcteur proportionnel}}
 
 \normalsize Nous allons désormais câbler le correcteur physiquement et avoir la même démarche que pour les simulations précédentes, en comparant les différents résultat.
 Pour câbler le système, il nous faut un comparateur, qui sera obtenu à l'aide d'un circuit électronique. Dans notre cas, nous allons utilier un soustracteur dont le montage est  :
 \begin{center}
-    \includegraphics[width = 10 cm]{TP3/soustracteur.png}
+    \includegraphics[width = 8 cm]{TP3/soustracteur.png}
 \end{center}
 Sa tension de sortie est alors : $V_s = \frac{R_2}{R_1}(V_2-V_1)$ où dans notre cas nous aurons $R_2 = R_1$ car on veut juste soustraire $V_2$ et $V_1$.
 Pour un correcteur proportionnel, nous allons utiliser un amplificateur avec un AOP. Voici son montage : 
 \begin{center}
-    \includegraphics[width = 10 cm]{TP3/ampli_non_inv.png}
+    \includegraphics[width = 8 cm]{TP3/ampli_non_inv.png}
 \end{center}
 Sa fonction de transfert est alors $\frac{V_s}{V_e} = 1 + \frac{R_1}{R_2}$. Mais avant de câbler le correcteur, nous allons câbler l'asservissement avec $C(p) = 1$, c'est à dire que le correcteur est juste un fil. 
 En ce qui concerne le câblage, nous relions une sortie du GBF au $V_+$ du soustracteur et aussi sur l'entrée 1 de l'oscilloscope. Ensuite, nous branchons la 1$^{e}$ sortie de la maquette sur le $V_-$ du soustracteur et sur l'entrée 2 de l'oscilloscope. Enfin, nous connectons la sortie du comparateur sur l'entrée de la maquette.
 Nous choisissons comme résistance pour le soustracteur $R= 5800 \Omega$. Voici la réponse indicielle de cet asservissement : 
 \begin{center}
-    \includegraphics[width = 19cm]{TP3/Syst_1/P/14_04_2023_gs_k1_.png}
-    \includegraphics[width = 19cm]{TP3/Syst_1/P/14_04_2023_tr5_k1.png}
+    \includegraphics[width = 16cm]{TP3/Syst_1/P/14_04_2023_gs_k1_.png}
 \end{center}
-
-On peut lire sur la première capture que l'erreur statique est de $100 - 63 = 37.1\%$ d'après les curseurs et sur le deuxième graphe on lit $t_{r5\%} = 22$ms.
-En comparaison, on attendait 35$\%$ d'erreur statique et 22.74 ms de temps de réponse. Les résultats mesurés sont très proches des résultats théoriques, l'écart entre l'erreur statique théorique et réelle peut s'expliquer par des imprécisions de mesures sur l'oscilloscope.
+On peut lire ci-dessus que l'erreur statique est de $100 - 63 = 37.1\%$ d'après les curseurs. En comparaison, on attendait 35$\%$ d'erreur statique.
+\begin{center}
+    \includegraphics[width = 16cm]{TP3/Syst_1/P/14_04_2023_tr5_k1.png}
+\end{center}
+On lit $t_{r5\%} = 22$ms. En compraison , on attendait 22.74 ms de temps de réponse. Les résultats mesurés sont très proches des résultats théoriques, l'écart entre l'erreur statique théorique et réelle peut s'expliquer par des imprécisions de mesures sur l'oscilloscope.
 Désormais nous câblons le correcteur proportionnel en série avec le comparateur, avec la sortie du comparateur branchée maintenant sur $V_+$ de l'amplificateur et la sortie de celui-ci reliée à l'entrée de la maquette.
 \newpage \begin{itemize}
 \item \bf \large K = 4.97
@@ -500,8 +501,8 @@ Comme la valeur de K expérimentale n'est pas la même que le K théorique, on r
 $K_{BF} = \frac{KA}{1+KA}  = 0.92$ ce qui fait qu'on attend une erreur statique de 8$\%$ et $\tau_{BF} = \frac{\tau}{1 + KA} = 1.69.10^{-3}$ms $\Rightarrow t_{r5\%} = 5.06$ms.
 Voici les graphes obtenus :
 \begin{center}
-    \includegraphics[width = 18 cm]{TP3/Syst_1/P/14_04_2023_es_k5.png}
-    \includegraphics[width = 18 cm]{TP3/Syst_1/P/14_04_2023_tr_k5.png}
+    \includegraphics[width = 16 cm]{TP3/Syst_1/P/14_04_2023_es_k5.png}
+    \includegraphics[width = 16 cm]{TP3/Syst_1/P/14_04_2023_tr_k5.png}
 \end{center}
 On remarque que le temps de réponse est le même à 3$\%$ près ce qui peut être dû à une imprécision de mesure sur le graphe ou à cause de la précision des valeurs des résistances. Cependant, l'erreur statique mesurée est cependant différente de 2$\%$ à celle attendue.
 \begin{itemize}
@@ -509,34 +510,60 @@ On remarque que le temps de réponse est le même à 3$\%$ près ce qui peut êt
 \end{itemize}
 Expérimentalement, nous réalisons un correcteur proportionnel de K = 56.5. Comme précédemment, on attend alors une erreur statique toujours de environ 1$\%$ car la valeur expérimentale de K n'est pas très éloignée de la valeur de K voulue, ce qui modifie de façon négligeable les résultats voulus. Voici les graphes obtenus : 
 \begin{center}
-    \includegraphics[width = 18 cm]{TP3/Syst_1/P/14_04_2023_depk55.png}
-    \includegraphics[width = 18 cm]{TP3/Syst_1/P/14_04_2023_tr_k55.png}
+    \includegraphics[width = 16 cm]{TP3/Syst_1/P/14_04_2023_depk55.png}
+    \includegraphics[width = 16 cm]{TP3/Syst_1/P/14_04_2023_tr_k55.png}
 \end{center}
 On remarque tout de suite que pour cette valeur de K, le modèle du premier ordre utilisé n'est pas du tout bon : la réponse indicielle présente des dépassements et une tangente nulle à l'origine. On ne peut pas comparer aux valeurs calculées théoriquement car le modèle utilisé n'est pas le bon.
+On peut quand même relever les résultats : $\epsilon_s \approx 1\%$ et $t_{r5\%} = 2.34$ms et $D_1 = 30.7$. 
+\newpage
 \begin{itemize}
 \item \bf \large K = 2.2
 \end{itemize}
 Expérimentalement, nous réalisons un correcteur proportionnel de K = 2.18. Nous ne recalculons pas les valeurs pour cette valeur de K, car il n'y a que un écart de 0.9$\%$ entre ces deux valeurs. Voici les graphes obtenus : 
 \begin{center}
-    \includegraphics[width = 18 cm]{TP3/Syst_1/P/err_stat_K2_2_syst1.png}
+    \includegraphics[width = 18 cm]{TP3/Syst_1/P/estat-syst1-k2.2.png}
+\end{center}
+Pour mesurer l'erreur statique, on place les curseurs Y1 et Y2 au niveau de la valeur basse et haute de l'échelon. On définit cet écartement comme 100$\%$. On remonte ensuite le curseur Y1 pour s'aligner avec le régime permanent de la réponse indicielle. Il suffit donc de lire le pourcentage en face de $\Delta Y$ pour récupérer l'erreur statique expériementale.
+
+    \begin{center}
     \includegraphics[width = 18 cm]{TP3/Syst_1/P/tr5prct_syst1_K2_2.png}
 \end{center}
-\large INTERPRETATION
+Les valeurs expérimentales correspondent bien aux valeur théoriques : on attendait une erreur statique de 20$\%$, et dans les faits, nous avons une erreur statique de $19.4\%$. On attendait aussi $t_{r5\%} = 12.9$ms et on mesure un temps de réponse à 11.9 ms. Ces légères différence peuvent s'expliquer par les imprécisions des résistances et du fait que les valeurs de K sont très légèrement différentes ou bien des imprécisions de lecture du graphe.
+
 \begin{itemize}
 \item \bf \large K = 27.2
 \end{itemize}
-\large VALEURS PRISES POUR R ET VALEURS ATTENDUES SI K experimental différent de K théorique
+Expérimentalement, nous réalisons un correcteur proportionnel de K = 27.1. Nous ne recalculons pas les valeurs pour cette valeur de K, car il n'y a que un écart de 0.4$\%$ entre ces deux valeurs.
 \begin{center}
-    \includegraphics[width = 18 cm]{TP3/Syst_1/P/k27_2_es.png}
-    \includegraphics[width = 18 cm]{TP3/Syst_1/P/k27_2_dep.png}
-    \includegraphics[width = 18 cm]{TP3/Syst_1/P/k27_2_tr.png}
+    \includegraphics[width = 16 cm]{TP3/Syst_1/P/estat-syst1-k27,2.png}
 \end{center}
-\large INTERPRETATION
+Avec la même méthode que précédemment, on mesure $\epsilon_s = 2.4\%$ au lieu de 2$\%$ théoriquement. Cet écart de 20$\%$ s'explique par le fait que la lecture d'une erreur statique est difficile et imprécise sur un graphe tel que celui obtenu.
+\begin{center}
+    \includegraphics[width = 16 cm]{TP3/Syst_1/P/k27_2_dep.png}
+\end{center}
+On mesure un dépassement de 8$\%$ qui n'était pas prévu théoriquement. Le modèle n'est pas correct pour cette valeur de K.
+\begin{center}
+    \includegraphics[width = 16 cm]{TP3/Syst_1/P/k27_2_tr.png}
+\end{center}
+Comme le modèle n'est pas bon, le temps de réponse à 5$\%$ n'est pas correspondant : on mesure 3.10 ms alors qu'on attendait 1.26 ms. Cette augmentation du temps de réponse est notamment dû au dépassement qui ralentit le système.
+\\\\Récapitulons toutes les données calculées et mesurées dans un tableau : 
 
-\normalsize Conclure quant à l’influence de K sur la précision statique et sur la dynamique du système.
+\begin{center}
+    \begin{tabular}{ |p{1cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5 cm}|}
 
-
-
+        \hline
+        $K$ & \normalsize  $t_{r5\%}$(ms) th. & $t_{r5\%}$(ms) sim. & $t_{r5\%}$(ms) exp.& $\epsilon_s$ ($\%$) th. & $\epsilon_s$ ($\%$) sim. & $\epsilon_s$ ($\%$) exp.\\
+        \hline
+        2.2& 12.8 & 12.98 & 11.9 &20 & 20.1 & 19.4\\
+        \textcolor{green}{4.97} & 6.39 & 6.42 & / & 10 & 10 & / \\
+        \textcolor{red}{6.428} & 5.06 & / &5.2 & 8 & / &9.8 \\
+        27.2 & 1.27 & 1.27 & 3.10 &2 & 2.09 & 2.4\\
+        54.7 & 0.64 & 0.646 & 2.34 &1 & 0.97 & $\approx 1$\\
+        \hline
+        \end{tabular}
+    \end{center}
+La valeur en vert est la valeur pour laquelle on atteint une erreur statique de 10$\%$ et celle en rouge correspond à la valeur la plus proche qui a pu être faite grâce à des résistances.
+\\\\\underline{\bf Conclusion :} Grâce à ce tableau, on peut comprendre facilement l'impact qu'a la valeur de K dans la dynamique du système : plus K augmente, plus le système est rapide et précis mais aussi plus nerveux. En effet, pour notre système, plus K augmente, moins le modèle utilisé correspond à la réalité. Pour les deux dernières valeurs de K, on obtient des réponses indicelles du deuxième ordre alors qu'on modélise le système par un premier ordre.
 \subsubsection{\underline{\bf Correcteur intégral}}
 
 On considère désormais un correcteur intégral $C(p) = \frac{1}{T_ip}$
@@ -564,7 +591,7 @@ Ainsi, on peut déterminer $\omega_{BF} = \sqrt{\frac{A}{T_i \tau}} = 33.526$ ra
 \\Ensuite, d'après la deuxième abaque, pour $z=0.7$, on récupère le temps de réponse à 5$\%$ réduit :
 $t_{r5\%}\omega_{BF} = 3 \Leftrightarrow t_{r5\%} = \frac{3}{\omega_{BF}} = \frac{3}{33.526} = 89$ms.
 \newpage
-\large \textit{ \textbf{Simulation}}
+\Large \textit{ \textbf{Simulation}}
 \\\normalsize Le système simulé dans Simulink est relativement le même que pour le correcteur proportionnel : 
 \begin{center}
     \includegraphics[width = 15 cm]{TP2 Simulink/Syst_1/Syst1_Simulink_I.png}
@@ -666,7 +693,7 @@ On a bien un système qui devient de plus en plus stable quand $T_i$ augmente.
 On peut lire sur cette capture d'écran à la fois le temps de réponse à 5$\%$ et l'amplitude du premier dépassement. L'échelon atteint 1, tout comme la réponse indicielle donc l'erreur statique est nulle et le premier dépassement atteint 1.045, donc le premier dépassement dépasse de 4.5$\%$ le régime permanent. Le temps de réponse à 5$\%$ de ce système est de 86,8 ms.
 En comparaison, on attendait : $D_1 = 5\%$ et $t_{r5\%} = 89$ms. Cet écart peut s'expliquer par une mauvaise précision de lecture sur les abaques lors du calcul de $T_i$ pour avoir un premier dépassement à 5$\%$.
 \\\\\underline{\bf Conclusion :} Pour résumer, d'après toutes les simulations et calculs théoriques, on se rend compte que pour un correcteur proportionnel, plus sa valeur augmente, plus son erreur statique et son temps de réponse diminuent sans présenter de dépassement, alors que pour le correcteur intégral, son erreur statique est toujours nulle mais la FTBO du sytème devient un deuxième ordre donc la réponse indicielle contient des dépassement qui diminuent en amplitude si $T_i$ augmente mais alors le temps de réponse devient très grand (0.3 secondes pour $T_i = 10\tau$). Pour ce système, le correcteur proportionnel est meilleur que le correcteur intégral sans compter l'erreur statique (mais qui tend vers 0 lorsque K augmente). 
-\newpage \large \textit{\textbf{Mise en oeuvre du correcteur intégral}}
+\newpage \Large \textit{\textbf{Mise en oeuvre du correcteur intégral}}
 \\Nous allons désormais remplacer le correcteur proportionnel précédemment câblé par un intégrateur monté en série avec un inverseur et leurs montages sont :
 \begin{figure}[!ht]
     \centering
@@ -738,7 +765,7 @@ D'après les abaques, le temps de réponse réduit est : $t_{r5\%}\omega_{0_{BF}
         \hline
         \end{tabular}
     \end{center}
-\large \textit{ \textbf{Simulation}}
+\Large \textit{ \textbf{Simulation}}
 \\\\\normalsize Dans cette partie, nous avons utilisé le logiciel "Simulink" pour tracer la réponse indicielle de
 l’asservissement pour les deux valeurs de K calculées précédemment. Nous avons utilisé ce système
 pour les différentes simulations : 
@@ -773,7 +800,7 @@ pour les différentes simulations :
 \subsubsection{\underline{\bf Correcteur intégral}}
 
 On considère désormais un correcteur intégral $C(p) = \frac{1}{T_ip}$
-\\\\\large \textit{ \textbf{Simulation}} 
+\\\\\Large \textit{ \textbf{Simulation}} 
 \\\\\normalsize Le système simulé dans Simulink est relativement le même que pour le correcteur proportionnel : 
 \begin{center}
     \includegraphics[width = 15 cm]{TP2 Simulink/Syst_2/Syst_2_Simulink_I.png}
