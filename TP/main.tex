@@ -495,25 +495,28 @@ Désormais nous câblons le correcteur proportionnel en série avec le comparate
 \newpage \begin{itemize}
 \item \bf \large K = 4.97
 \end{itemize}
-\large VALEURS PRISES POUR R ET VALEURS ATTENDUES SI K experimental différent de K théorique
+Expérimentalement, nous réalisons un correcteur proportionnel de K = 1 + 5.428 = 6.428.
+Comme la valeur de K expérimentale n'est pas la même que le K théorique, on refait les calculs théoriques pour K = 6.428 :
+$K_{BF} = \frac{KA}{1+KA}  = 0.92$ ce qui fait qu'on attend une erreur statique de 8$\%$ et $\tau_{BF} = \frac{\tau}{1 + KA} = 1.69.10^{-3}$ms $\Rightarrow t_{r5\%} = 5.06$ms.
+Voici les graphes obtenus :
 \begin{center}
     \includegraphics[width = 18 cm]{TP3/Syst_1/P/14_04_2023_es_k5.png}
     \includegraphics[width = 18 cm]{TP3/Syst_1/P/14_04_2023_tr_k5.png}
 \end{center}
-\large INTERPRETATION
+On remarque que le temps de réponse est le même à 3$\%$ près ce qui peut être dû à une imprécision de mesure sur le graphe ou à cause de la précision des valeurs des résistances. Cependant, l'erreur statique mesurée est cependant différente de 2$\%$ à celle attendue.
 \begin{itemize}
 \item \bf \large K = 54.7
 \end{itemize}
-\large VALEURS PRISES POUR R ET VALEURS ATTENDUES SI K experimental différent de K théorique
+Expérimentalement, nous réalisons un correcteur proportionnel de K = 56.5. Comme précédemment, on attend alors une erreur statique toujours de environ 1$\%$ car la valeur expérimentale de K n'est pas très éloignée de la valeur de K voulue, ce qui modifie de façon négligeable les résultats voulus. Voici les graphes obtenus : 
 \begin{center}
     \includegraphics[width = 18 cm]{TP3/Syst_1/P/14_04_2023_depk55.png}
-    \includegraphics[width = 18 cm]{TP3/Syst_1/P/14_04_2023_tr_k5.png}
+    \includegraphics[width = 18 cm]{TP3/Syst_1/P/14_04_2023_tr_k55.png}
 \end{center}
-\large INTERPRETATION
+On remarque tout de suite que pour cette valeur de K, le modèle du premier ordre utilisé n'est pas du tout bon : la réponse indicielle présente des dépassements et une tangente nulle à l'origine. On ne peut pas comparer aux valeurs calculées théoriquement car le modèle utilisé n'est pas le bon.
 \begin{itemize}
 \item \bf \large K = 2.2
 \end{itemize}
-\large VALEURS PRISES POUR R ET VALEURS ATTENDUES SI K experimental différent de K théorique
+Expérimentalement, nous réalisons un correcteur proportionnel de K = 2.18. Nous ne recalculons pas les valeurs pour cette valeur de K, car il n'y a que un écart de 0.9$\%$ entre ces deux valeurs. Voici les graphes obtenus : 
 \begin{center}
     \includegraphics[width = 18 cm]{TP3/Syst_1/P/err_stat_K2_2_syst1.png}
     \includegraphics[width = 18 cm]{TP3/Syst_1/P/tr5prct_syst1_K2_2.png}
@@ -665,17 +668,28 @@ En comparaison, on attendait : $D_1 = 5\%$ et $t_{r5\%} = 89$ms. Cet écart peut
 \\\\\underline{\bf Conclusion :} Pour résumer, d'après toutes les simulations et calculs théoriques, on se rend compte que pour un correcteur proportionnel, plus sa valeur augmente, plus son erreur statique et son temps de réponse diminuent sans présenter de dépassement, alors que pour le correcteur intégral, son erreur statique est toujours nulle mais la FTBO du sytème devient un deuxième ordre donc la réponse indicielle contient des dépassement qui diminuent en amplitude si $T_i$ augmente mais alors le temps de réponse devient très grand (0.3 secondes pour $T_i = 10\tau$). Pour ce système, le correcteur proportionnel est meilleur que le correcteur intégral sans compter l'erreur statique (mais qui tend vers 0 lorsque K augmente). 
 \newpage \large \textit{\textbf{Mise en oeuvre du correcteur intégral}}
 \\Nous allons désormais remplacer le correcteur proportionnel précédemment câblé par un intégrateur monté en série avec un inverseur et leurs montages sont :
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width = 8 cm]{TP3/integrateur.png}
     \caption{\itshape Montage d'un intégrateur}
-\end{figure}
-\begin{figure}[!h]
-    \centering
     \includegraphics[width = 8cm]{TP3/inverseur.png}
     \caption{\itshape Montage d'un inverseur}
 \end{figure}
-Nous avons besoin d'in intégrateur non-inverseur or, la figure 1 représente un montage qui a comme fonction de transfert $\frac{V_s}{V_e} = -\frac{1}{RCj\omega}$. Il faut donc bien rajouter un amplificateur inverseur avec $R_2=R_1$ pour compenser la négativité de l'inverseur.
+\normalsize Nous avons besoin d'un intégrateur non-inverseur or, la figure 1 représente un montage qui a comme fonction de transfert $\frac{V_s}{V_e} = -\frac{1}{RCj\omega}$. Il faut donc bien rajouter un amplificateur inverseur avec $R_2=R_1$ pour compenser la négativité de l'inverseur.
+\begin{itemize}
+    \item \large $\mathbf{T_i = \tau = 0.0213}$
+\end{itemize}
+Expérimentalement, nous savons que $T_i = RC$, on cherche donc $T_i = 0.0213$. On prend $R=994 \Omega$ et $C = 22 \mu F$. On a alors $RC = 21.8$ms.
+Pour les résistances de l'inverseur, nous choisissons $R_1=R_2 = 5800 \Omega$. Voici les graphes obtenus : 
+
+\begin{center}
+    \includegraphics[width = 19 cm]{TP3/Syst_1/I/dep-syst1-ti=tau.png}
+    \includegraphics[width = 19 cm]{TP3/Syst_1/I/tr5prc-syst1-ti=tau1.png}
+\end{center}
+
+On constate tout de suite qu'on a bien une erreur statique nulle, comme c'était attendu, 
+
+
 \subsection{\itshape Système 2}
 \subsubsection{\underline{\itshape \bf Correcteur proportionnel}}
 On considère dans un premier temps un correcteur proportionnel $C(p) = K > 0$ et le système 2 qui est modélisé par une fonction de transfert du deuxième ordre $T(s) = F_2(s) = \frac{A}{1 + 2z\frac{p}{\omega_0} + (\frac{p}{\omega_0})^2}$.
