@@ -431,7 +431,7 @@ Il suffit ensuite de placer un premier curseur vertical au tout début de la sim
 \normalsize Par la même méthode que précédemment, on trouve comme erreur statique $0.9733\%$ et comme de temps de réponse à cinq pourcents de $0.646$ms.
 \\Cette fois-ci, on attendait une erreur statique de 1$\%$ mais la valeur mesurée est légèrement inférieure de 2.67$\%$. Cette différence s'explique de la difficulté d'être précis pour mesurer une erreur statique de 1$\%$ sur le graphe.
 
-\begin{itemize}
+\newpage\begin{itemize}
     \item \bf \large K = 2.2
 \end{itemize}
 \begin{center}
@@ -466,8 +466,6 @@ Résumons toutes ces mesures dans un tableau :
         \hline
         \end{tabular}
     \end{center}
-
-
 
 \Large \textit{ \textbf{Mise en oeuvre du correcteur proportionnel}}
 
@@ -505,7 +503,7 @@ Voici les graphes obtenus :
     \includegraphics[width = 16 cm]{TP3/Syst_1/P/14_04_2023_tr_k5.png}
 \end{center}
 On remarque que le temps de réponse est le même à 3$\%$ près ce qui peut être dû à une imprécision de mesure sur le graphe ou à cause de la précision des valeurs des résistances. Cependant, l'erreur statique mesurée est cependant différente de 2$\%$ à celle attendue.
-
+\\\\\\\\\\\\\\\\\\\\\\\\
 \begin{itemize}
 \item \bf \large K = 54.7
 \end{itemize}
@@ -860,15 +858,54 @@ pour les différentes simulations :
     Pour l'amplitude du premier dépassement, on détermine déjà l'écart entre le régime permanent et le dépassement : $1.765 -0.98 = 0.785$. On divise ensuite ce nombre par 1$\%$ de 0.98 donc par 0.0098.
     On a finalement $D_1 = \frac{0.785}{0.0098} = 80.10\%$. Enfin, on peut voir le temps de réponse à 5$\%$ sur la deuxième capture : $t_{r5\%}$ = 130.95 ms.
     Ainsi nos valeurs simulées sont plutôt proches les unes des autres (écart de 0.13$\%$ entre les valeurs des amplitudes du premier dépassement, écart nul entre les erreurs statiques et écart de 3.27$\%$ entre les temps de réponse). Toutes ces erreurs peuvent être dues à une imprécision des mesures sur les graphes des réponses indicielles mais comme ces erreurs ne sont pas grandes et cohérentes, le modèle est bon pour cette valeur de K.
-\\\\Finalement, on se rend compte ici que plus K augmente, plus l'erreur statique diminue, mais en contrepartie le système devient plus nerveux. Dans notre cas, des dépassements de 60 et 80$\%$ sont très mauvais, malgré l'erreur statique faible.
-\newpage
+    \\\\Finalement, on se rend compte ici que plus K augmente, plus l'erreur statique diminue, mais en contrepartie le système devient plus nerveux. Dans notre cas, des dépassements de 60 et 80$\%$ sont très mauvais, malgré l'erreur statique faible.
+\\\\\Large \textit{\textbf{Mise en oeuvre du correcteur proportionnel}}
+\\\\\normalsize Dans cette partie, nous reprenons le même montage qu'en \textbf{4.1.1} mais cette fois en visualisant et en branchant au comparateur la sortie $Vs_2$.
+\begin{itemize}
+    \item \bf \large K = 4.5
+\end{itemize}
+Expérimentalement, nous réalisons un correcteur proportionnel de $K = 1 + \frac{R_2}{R_1} = 1 + \frac{9.6 k\Omega}{2.67 k\Omega} = 4.6$. Nous ne recalculons pas les valeurs pour cette valeur de K, car il n'y qu'un écart de 2$\%$ entre ces deux valeurs.
+Voici les différents graphes obtenus.
+\begin{center}
+    \includegraphics[width = 16 cm]{TP3/Syst_2/P/estat-syst2-k4,5.png}
+\end{center}
+Sur ce premier graphe, nous pouvons lire l'erreur statique de la réponse indicielle : elle vaut 9.2$\%$ soit 8$\%$ de moins que la valeur attendue ($\epsilon_s = 10\%$). Cet écart est dû à la légère différence entre la valeur de K réelle et celle utilisée pour les simulations.
+\begin{center}
+    \includegraphics[width = 16 cm]{TP3/Syst_2/P/k4_5_syst2_d1.png}
+\end{center}
+Sur le graphe ci-dessus, on peut lire l'amplitude du premier dépassement : $D_1 = 61\%$ soit 1.5$\%$ de plus que la valeur simulée, à cause de la différences des valeurs de K encore une fois.
+\begin{center}
+    \includegraphics[width = 16 cm]{TP3/Syst_2/P/k4_5_syst2_tr.png}
+\end{center}
+Sur ce dernier graphe, on lit un temps de réponse à cinq pourcents de 127.6 ms alors qu'on attendait 141.8 ms. Cette différence une explication. Sur le graphe, on voit que la réponse indicielle présente de multiples dépassements. De plus, en plaçant le curseur à 105$\%$ ou 95$\%$ de la valeur du régime permament, il est très difficile de savoir si les dépassements et les "sous-dépassements" passent au-dessous de 105$\%$ ou en-dessous de 95$\%$ comme on peut par exemple le voir sur le graphe. Le curseur est à 95$\%$ du R.P. et il est difficile de voir si la réponse coupe ce curseur ou non.
+
+
+
+\begin{itemize}
+    \item \bf \large K = 24.5
+\end{itemize}
+Expérimentalement, nous réalisons un correcteur proportionnel de $K = 1 + \frac{R_2}{R_1} = 1 + \frac{46.7 k\Omega}{215\Omega + 1770\Omega} = 24.52$. Nous ne recalculons pas les valeurs pour cette valeur de K, car il n'y qu'un écart de 0.08$\%$ entre ces deux valeurs.
+Voici les différents graphes obtenus.
+\begin{center}
+    \includegraphics[width = 16 cm]{TP3/Syst_2/P/estat-syst2-k24,5.png}
+\end{center}
+Sur ce premier graphe, nous pouvons lire l'erreur statique de la réponse indicielle : elle vaut 2.1$\%$ soit 5$\%$ de plus que la valeur attendue ($\epsilon_s = 1.96\%$). Cet écart est dû à la légère différence entre la valeur de K réelle et celle utilisée pour les simulations.
+\begin{center}
+    \includegraphics[width = 16 cm]{TP3/Syst_2/P/k24_5_syst2_dep_.png}
+\end{center}
+Sur le graphe ci-dessus, on peut lire l'amplitude du premier dépassement : $D_1 = 64.8\%$ soit 19$\%$ de moins que la valeur simulée. Comme la différence est conséquente, on peut penser que le modèle du second ordre n'est plus adapté pour cette valeur de K.
+\begin{center}
+    \includegraphics[width = 16 cm]{TP3/Syst_2/P/k24_5_syst2_tr.png}
+\end{center}
+Ici aussi, on trouve un temps de réponse de 118 ms alors qu'on attendait 131 ms. Pour la même raison que pour le dépassement, nous pensons que le modèle n'est pas assez bon pour ce système pour K=24.5 car les valeurs sont trop différentes entre elles mais l'erreur statique est correcte, ce qui signifie qu'il n'y a pas de problème de calcul ou de branchement.
+\\\\\underline{\bf Conclusion :} Pour ce système, plus K augmente, plus le système a un premier dépassement important, mais son erreur statique diminue, et son temps de réponse n'a pas vraiment de tendance car si le premier dépassement est plus important, alors le système va osciller plus longtemps en dehors des 5$\%$ autour du R.P. Des premiers dépassements de 60 et 65$\%$ ne sont absolument pas convaincants pour un système. Un correcteur proportionnel pour ce système modélisé par un système du second ordre n'est pas adapté.
 \subsubsection{\underline{\bf Correcteur intégral}}
 
 On considère désormais un correcteur intégral $C(p) = \frac{1}{T_ip}$
 \\\\\Large \textit{ \textbf{Simulation}} 
 \\\\\normalsize Le système simulé dans Simulink est relativement le même que pour le correcteur proportionnel : 
 \begin{center}
-    \includegraphics[width = 15 cm]{TP2 Simulink/Syst_2/Syst_2_Simulink_I.png}
+    \includegraphics[width = 12 cm]{TP2 Simulink/Syst_2/Syst_2_Simulink_I.png}
 \end{center}
 
 Traçons désormais les réponses indicielles pour différentes valeurs de $T_i$ : 
@@ -909,7 +946,6 @@ On peut ensuite lire que $t_{r5\%} = 288.10$ms.
 \begin{center}
     \normalsize Pour $T_i = \frac{10}{\omega_0}$, \large $FTBO = \frac{2}{0.2242p + 0.00503p^2 + 0.0001127p^3}$.
 \end{center}
-\newpage
 \normalsize On obtient alors :
 \begin{center}
     \includegraphics[width = 16 cm]{TP2 Simulink/Syst_2/nichols_Ti=10_sur_omega0.png}
@@ -923,14 +959,13 @@ On trouve comme marge de phase \fbox{$m_{\phi_{\frac{10}{\omega_0}}} = -102-(-18
     \includegraphics[width = 16 cm]{TP2 Simulink/Syst_2/tr5prct_et_depassement_4.2_5_sur_omega0.png}
 
 \end{center}
-On remarque que la réponse admet désormais des dépassements, mais l'erreur staituqe est toujours nulle. Nous avons placé les curseurs de façon à pouvoir mesurer l'amplitude du premier dépassement et le temps de réponse à cinq pourcents.
+On remarque que la réponse admet désormais des dépassements, mais l'erreur statique est toujours nulle. Nous avons placé les curseurs de façon à pouvoir mesurer l'amplitude du premier dépassement et le temps de réponse à cinq pourcents.
 On trouve ainsi $D_1 = 12.3\%$ et $t_{r5\%} = 227.2$ms.
 \\\\\underline{\bf Diagramme de Black de la FTBO :}
 
 \begin{center}
     \normalsize Pour $T_i = \frac{5}{\omega_0}$, \large $FTBO = \frac{2}{0.1121p + 0.0025p^2 + 0.0000564p^3}$.
 \end{center}
-\newpage
 \normalsize On obtient alors :
 \begin{center}
     \includegraphics[width = 16 cm]{TP2 Simulink/Syst_2/nichols_4.2_Ti=5_sur_omega0.png}
@@ -951,11 +986,69 @@ Pour cette valeur de $T_i$, le système est instable. On peut le confirmer en me
 \begin{center}
     \normalsize Pour $T_i = \frac{1}{\omega_0}$, \large $FTBO = \frac{2}{0.0224p + 0.000503p^2 + 0.0000113p^3}$.
 \end{center}
-\newpage
 \normalsize On obtient alors :
 \begin{center}
     \includegraphics[width = 16 cm]{TP2 Simulink/Syst_2/nichols_4.2_Ti=1_sur_omega0.png}
 \end{center}
 On trouve comme marge de phase \fbox{$m_{\phi_{\frac{1}{\omega_0}}} = -209-(-180) = -29^{\circ} < 0$}. Le système est donc bien instable.
+\newpage
+Résumons toutes ces simulations sous forme de tableau : 
+\begin{center}
+    \begin{tabular}{ |p{1cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|}
+
+        \hline
+        $T_i$ & $t_{r5\%}$(ms) &$D_1 (\%)$ & $\epsilon_s$ ($\%$)&$m_{\phi} (^{\circ}$)\\
+        \hline
+        $\frac{20}{\omega_0}$& 627.65 & / & 0 & 52\\
+        $\frac{10}{\omega_0}$ & 288.1 & / & 0 & 78  \\
+        $\frac{5}{\omega_0}$ & 227.2 & 12.3 & 0 & 62  \\
+        $\frac{1}{\omega_0}$ & / & / & / & -29  \\
+        \hline
+        \end{tabular}
+    \end{center}
+
+    \underline{\bf Conclusion :} On retrouve bien la même conclusion que pour le correcteur intégral implanté sur le système 1 : plus $T_i$ augmente, plus le temps de réponse augmente. Cependant, on ne peut pas faire de conclusion quant à la marge de phase : elle n'évolue pas proportionnellement à $T_i$. Cependant, une remarque est à évoquer : sur la réponse indicielle simulée pour $T_i = \frac{10}{\omega_0}$, on observe que la courbe n'est pas lisse, elle présente des "coudes", qui pourraient signifier que la réponse est d'ordre 4 ou plus, ce qui pourrait expliquer l'incohérence au niveau des marges de phases. Le modèle ne serait finalement pas satisfaisant pour cette valeur de $T_i$.
+    \newpage\Large \textit{\textbf{Mise en oeuvre du correcteur intégral}}
+\\\\\normalsize Dans cette partie, nous reprenons le même montage qu'en \textbf{4.1.2} mais cette fois en visualisant et en branchant au comparateur la sortie $Vs_2$.
+\begin{itemize}
+    \item \large $\mathbf{T_i = \frac{20}{\omega_0} = 0.448}$
+\end{itemize}
+Expérimentalement, nous savons que $T_i = RC$, on cherche donc $T_i = 0.448$. On prend $R = 68 k\Omega$ et $C = 6.6 \mu F$. On a alors $RC \approx 0.448$. Notre $T_i$ expérimental est quasiment identique au $T_i$ théorique.
+Voici la réponse indicielle obtenue : 
+\begin{center}
+    \includegraphics[width = 16 cm]{TP3/Syst_2/I/tr5-syst2-ti=20surw0.png}
+\end{center} 
+Comme à la simulation, on a bien une erreur statique nulle. On peut ensuite lire que $t_{r5\%} = 668$ms alors qu'on attendait $t_{r5\%} = 627.7$ms soit un écart de 6$\%$, qui est dû aux imprécisions des valeurs de la résistance et du condensateur et de l'imprécision de lecture sur le graphe.
+\begin{itemize}
+    \item \large $\mathbf{T_i = \frac{10}{\omega_0} = 0.2242}$
+\end{itemize}
+Expérimentalement, nous savons que $T_i = RC$, on cherche donc $T_i = 0.2242$. On prend $R = 32.2 k\Omega$ et $C = 6.6 \mu F$. On a alors $RC \approx 0.213$. Notre $T_i$ expérimental est différent de 5$\%$.
+Voici la réponse indicielle obtenue : 
+\begin{center}
+    \includegraphics[width = 16 cm]{TP3/Syst_2/I/tr5-syst2-ti=10surw1.png}
+\end{center} 
+Comme à la simulation, on a bien une erreur statique nulle. On peut ensuite lire que $t_{r5\%} = 312$ms alors qu'on attendait $t_{r5\%} = 288$ms soit un écart de 8$\%$, qui est dû aux imprécisions des valeurs de la résistance et du condensateur et de l'imprécision de lecture sur le graphe.
+\begin{itemize}
+    \item \large $\mathbf{T_i = \frac{5}{\omega_0} = 0.112}$
+\end{itemize}
+Expérimentalement, nous savons que $T_i = RC$, on cherche donc $T_i = 0.112$. On prend $R = 18.1 k\Omega$ et $C = 6.6 \mu F$. On a alors $RC \approx 0.119$. Notre $T_i$ expérimental est différent de 6.25$\%$.
+Voici la réponse indicielle obtenue : 
+\begin{center}
+    \includegraphics[width = 16 cm]{TP3/Syst_2/I/tr5-syst2-ti=5surw0.png}
+\end{center} 
+Comme à la simulation, on a bien une erreur statique nulle. On peut ensuite lire que $t_{r5\%} = 312$ms alors qu'on attendait $t_{r5\%} = 288$ms soit un écart de 8$\%$, qui est dû aux imprécisions des valeurs de la résistance et du condensateur et de l'imprécision de lecture sur le graphe.
+Cependant, l'allure de la réponse indicielle est plutôt différente de la simulation : on voit qu'il y a des oscillations, mais pas assez pour qu'elles soient appelées "dépassements". Cette réponse nous fait penser qu'elle correspond peut-être à une réponse indicielle d'ordre 4 ou supérieur, ce qui permettrait de conclure que le modèle n'est pas adapté pour cette valeur de $T_i$.
+\newpage\begin{itemize}
+    \item \large $\mathbf{T_i = \frac{1}{\omega_0} = 0.02242}$
+\end{itemize}
+Expérimentalement, nous savons que $T_i = RC$, on cherche donc $T_i = 0.02242$. On prend $R = 3280 k\Omega$ et $C = 6.6 \mu F$. On a alors $RC \approx 0.0216$. Notre $T_i$ expérimental est différent de 3.7$\%$.
+Voici la réponse indicielle obtenue : 
+\begin{center}
+    \includegraphics[width = 16 cm]{TP3/Syst_2/I/inst-syst2-ti=1surw0.png}
+\end{center} 
+Comme à la simulation, on observe que le système est instable : la sortie sature à cause du $V_{sat}$ de l'AOP, mais on a bien une instabilité ici.
+
+\large \underline{\bf Conclusion : }
+\normalsize
 
 \end{document}
