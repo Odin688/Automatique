@@ -411,8 +411,8 @@ Système 5 fois plus rapide $\Leftrightarrow$ \large$ t_{r5\%_{BF}} = \frac{t_{r
     \item \bf \large K = 4.97
 \end{itemize}
 \begin{center}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/Erreur statique_syst_1_K=4.97.png}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/Reponse_indic_syst_1_K=4.97_tr5prct.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_1/Erreur statique_syst_1_K=4.97.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_1/Reponse_indic_syst_1_K=4.97_tr5prct.png}
 
 \end{center}
 
@@ -425,8 +425,8 @@ Il suffit ensuite de placer un premier curseur vertical au tout début de la sim
     \item \bf \large K = 54.7
 \end{itemize}
 \begin{center}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/Erreur_statique_syst_1_K=54.7.png}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/tr5prct_syst_1_K=54.7.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_1/Erreur_statique_syst_1_K=54.7.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_1/tr5prct_syst_1_K=54.7.png}
 \end{center}
 \normalsize Par la même méthode que précédemment, on trouve comme erreur statique $0.9733\%$ et comme de temps de réponse à cinq pourcents de $0.646$ms.
 \\Cette fois-ci, on attendait une erreur statique de 1$\%$ mais la valeur mesurée est légèrement inférieure de 2.67$\%$. Cette différence s'explique de la difficulté d'être précis pour mesurer une erreur statique de 1$\%$ sur le graphe.
@@ -435,8 +435,8 @@ Il suffit ensuite de placer un premier curseur vertical au tout début de la sim
     \item \bf \large K = 2.2
 \end{itemize}
 \begin{center}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/Err_statique_syst_1_K=2.2.png}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/tr5prct_syst_1_K=2.2.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_1/Err_statique_syst_1_K=2.2.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_1/tr5prct_syst_1_K=2.2.png}
 \end{center}
 \normalsize En utilisant la même méthode que précédemment, on mesure une erreur statique $\epsilon_s = 20.1\%$ et un temps de réponse à cinq pourcents $t_{r5\%} = 12.98$ms.
 Les valeurs mesurées sont de nouveau très proches, (écart de 0.5$\%$ entre les erreurs statiques et de 1.4$\%$ entre les temps de réponse à cinq pourcents) les légers écarts sont liées à la précision de lecture du graphe.
@@ -444,8 +444,8 @@ Les valeurs mesurées sont de nouveau très proches, (écart de 0.5$\%$ entre le
     \item \bf \large K = 27.2
 \end{itemize}
 \begin{center}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/err_stat_syst_1_K=27.2.png}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/tr5prct_syst_1_K=27.2.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_1/err_stat_syst_1_K=27.2.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_1/tr5prct_syst_1_K=27.2.png}
 \end{center}
 \normalsize Enfin, pour la dernière valeur de K, on mesure une erreur statique $\epsilon_s = 2.09\%$ et un temps de réponse à cinq pourcents $t_{r5\%} = 1.27$ms.
 Les valeurs mesurées sont égales pour les temps de réponse à cinq pourcents, et différentes de 4.5$\%$ pour les erreurs statiques. Cette erreur est plus élevée car le temps de réponse est très court en comparaison avec la durée de la réponse indicielle, ce qui rend difficile une lecture plus précise sur le graphe.
@@ -493,7 +493,7 @@ On peut lire ci-dessus que l'erreur statique est de $100 - 63 = 37.1\%$ d'après
 \end{center}
 On lit $t_{r5\%} = 22$ms. En compraison , on attendait 22.74 ms de temps de réponse. Les résultats mesurés sont très proches des résultats théoriques, l'écart entre l'erreur statique théorique et réelle peut s'expliquer par des imprécisions de mesures sur l'oscilloscope.
 Désormais nous câblons le correcteur proportionnel en série avec le comparateur, avec la sortie du comparateur branchée maintenant sur $V_+$ de l'amplificateur et la sortie de celui-ci reliée à l'entrée de la maquette.
-\newpage \begin{itemize}
+ \begin{itemize}
 \item \bf \large K = 4.97
 \end{itemize}
 Expérimentalement, nous réalisons un correcteur proportionnel de K = 1 + 5.428 = 6.428.
@@ -505,6 +505,7 @@ Voici les graphes obtenus :
     \includegraphics[width = 16 cm]{TP3/Syst_1/P/14_04_2023_tr_k5.png}
 \end{center}
 On remarque que le temps de réponse est le même à 3$\%$ près ce qui peut être dû à une imprécision de mesure sur le graphe ou à cause de la précision des valeurs des résistances. Cependant, l'erreur statique mesurée est cependant différente de 2$\%$ à celle attendue.
+\\\\\\\\\\\\\\\\
 \begin{itemize}
 \item \bf \large K = 54.7
 \end{itemize}
@@ -529,7 +530,7 @@ Pour mesurer l'erreur statique, on place les curseurs Y1 et Y2 au niveau de la v
     \includegraphics[width = 18 cm]{TP3/Syst_1/P/tr5prct_syst1_K2_2.png}
 \end{center}
 Les valeurs expérimentales correspondent bien aux valeur théoriques : on attendait une erreur statique de 20$\%$, et dans les faits, nous avons une erreur statique de $19.4\%$. On attendait aussi $t_{r5\%} = 12.9$ms et on mesure un temps de réponse à 11.9 ms. Ces légères différence peuvent s'expliquer par les imprécisions des résistances et du fait que les valeurs de K sont très légèrement différentes ou bien des imprécisions de lecture du graphe.
-
+\\\\\\\\\\\\\\\\\\
 \begin{itemize}
 \item \bf \large K = 27.2
 \end{itemize}
@@ -603,8 +604,8 @@ Traçons désormais les réponses indicielles pour différentes valeurs de $T_i$
 \end{itemize}
 
 \begin{center}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/depassement_syst1_Ti=tau.png}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=tau.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_1/depassement_syst1_Ti=tau.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=tau.png}
 \end{center}
 \normalsize Le premier graphe permet de mesurer l'amplitude du premier dépassement : la réponse atteint 1 en régime permanent et le premier dépassement atteint son maximum en 1.28. On en déduit donc que l'amplitude du premier dépassement est de 28.2$\%$.
 On remarque aussi qu'on a bien une erreur statique nulle (la réponse indicielle atteint 1 en régime permanent tout comme l'échelon : $\epsilon_s = 1-1 = 0\%$).
@@ -629,17 +630,17 @@ Et ensuite :
 \end{verbatim}
 On obtient alors : 
 \begin{center}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/Ti=tau_syst_1_Black.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_1/Ti=tau_syst_1_Black.png}
 \end{center}
 Pour calculer la marge de phase, il faut récupérer l'abscisse du point où la courbe coupe l'axe $y=0$ et faire la différence entre cette abscisse et $-180$.
 \\Ainsi on trouve comme marge de phase \fbox{$m_{\phi_{\tau}} = -139-(-180) = 41^{\circ}$}.
-\newpage
+
 \begin{itemize}
     \item \large $\mathbf{T_i = 5\tau = 0.1065}$
 \end{itemize}
 \begin{center}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/depassement_syst_1_Ti=5tau.png}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=5tau.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_1/depassement_syst_1_Ti=5tau.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_1/tr5prct_syst_1_Ti=5tau.png}
     
 \end{center}
 \normalsize Le premier graphe permet de mesurer l'amplitude du premier dépassement : la réponse atteint 1 en régime permanent et le premier dépassement atteint son maximum en 1.01. On en déduit donc que l'amplitude du premier dépassement est de 1$\%$.
@@ -652,7 +653,7 @@ La deuxième capture d'écran permet de lire le temps de réponse à 5$\%$ : $t_
 \end{center}
 \normalsize On peut maintenant tracer le diagramme de Black à l'aide Matlab :
 \begin{center}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/Ti=5tau_syst_1_Black.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_1/Ti=5tau_syst_1_Black.png}
 \end{center}
 Pour calculer la marge de phase, il faut récupérer l'abscisse du point où la courbe coupe l'axe $y=0$ et faire la différence entre cette abscisse et $-180$.
 \\Ainsi on trouve comme marge de phase \fbox{$m_{\phi_{5\tau}} = -109-(-180) = 71^{\circ}$}.
@@ -662,10 +663,10 @@ Pour calculer la marge de phase, il faut récupérer l'abscisse du point où la 
 \end{itemize}
 \begin{center}
     
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/tr5prct_syst1_Ti=10tau.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_1/tr5prct_syst1_Ti=10tau.png}
     
 \end{center}
-\normalsize Le premier graphe permet de mesurer l'amplitude du premier dépassement : la réponse atteint 1 en régime permanent et le premier dépassement atteint son maximum en 1.01. On en déduit donc que l'amplitude du premier dépassement est de 1$\%$.
+\normalsize Le premier graphe permet de constater qu'il n'y a pas de dépassement.
 On remarque aussi qu'on a bien une erreur statique nulle (la réponse indicielle atteint 1 en régime permanent tout comme l'échelon : $\epsilon_s = 1-1 = 0\%$).
 La deuxième capture d'écran permet de lire le temps de réponse à 5$\%$ : $t_{r5\%} = 304$ms
 \\\\\underline{\bf Diagramme de Black de la FTBO :}
@@ -675,26 +676,54 @@ La deuxième capture d'écran permet de lire le temps de réponse à 5$\%$ : $t_
 \end{center}
 \normalsize On peut maintenant tracer le diagramme de Black à l'aide Matlab :
 \begin{center}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/Ti=10tau_syst_1_Black.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_1/Ti=10tau_syst_1_Black.png}
 \end{center}
 On en déduit ainsi la marge de phase :\fbox{$m_{\phi_{10\tau}} = -100-(-180) = 80^{\circ}$}.
-\\\\\underline{\bf Conclusion :} Les résultats obtenus sont bien cohérents : on a bien une baisse de nervosité et une hausse d'amortissement quand $T_i$ augmente.
+\\Finalement : 
+\begin{center}
+    \begin{tabular}{ |p{1cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|}
+
+        \hline
+        $T_i$ & $t_{r5\%}$(ms) &$D_1 (\%)$ & $\epsilon_s$ ($\%$)&$m_{\phi} (^{\circ}$)\\
+        \hline
+        $\tau$& 123.23 & 28.2 & 0 & 41\\
+        $5\tau$ & 127.1 & 1 & 0 & 71  \\
+        $10\tau$ & 304 & / & 0 & 80   \\
+        \hline
+        \end{tabular}
+    \end{center}
+\underline{\bf Conclusion :} Les résultats obtenus sont bien cohérents : on a bien une baisse de nervosité et une hausse d'amortissement quand $T_i$ augmente.
 En effet, pour $T_i = \tau$ et $T_i = 5\tau$, la réponse indicielle présentait des dépassements, mais plus aucun pour $T_i = 10\tau$. On peut aussi remarquer que les temps de réponse à 5$\%$ augmentent aussi quand $T_i$ augmente, ce qui confirme que si $T_i$ augmente, le système est plus lent.
 \\Enfin, la marge de phase nous permet de nous assurer de la stabilité des systèmes : d'après le \textbf{critère géométrique du revers} dans le plan de Black on sait que le système est stable en boucle fermée si et seulement si le lieu de Black de la fonction de transfert en boucle ouverte, parcouru dans le sens des pulsations croissantes, laisse le point (-180$^{\circ}$,0\textit{dB}) à sa droite.
 Or dans notre cas, nous avons bien tracé le lieu de Black de la FTBO et, pour chaque valeur de $T_i$, le point critique est à la droite du lieu de Black.
 De plus on peut aussi dire que comme toutes les marges de phase mesurées sont positives, les systèmes sont stables. Mais on peut aussi quatifier l'éloignement du système de l'instabilité : plus la marge de phase est grande (et positive), plus le système est stable. Dans notre cas, on avait :
 \\Pour $T_i = \tau$, $\mathbf{m_{\phi_{\tau}} = 41^{\circ}}$  ; $T_i = 5\tau$, $\mathbf{m_{\phi_{5\tau}} = 71^{\circ}}$ et $T_i = 10\tau$, $\mathbf{m_{\phi_{10\tau}} = 80^{\circ}}$.
 On a bien un système qui devient de plus en plus stable quand $T_i$ augmente.
-\\\\Traçons désormais la réponse indicielle avec la valeur de $T_i$ pour laquelle elle présente un dépassement de 5$\%$ : 
+\\\\Traçons désormais la réponse indicielle avec la valeur de $T_i$ pour laquelle elle présente un dépassement de 5$\%$ ($T_i = 0.0756$): 
 \begin{center}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_1/dep5prct_syst1.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_1/dep5prct_syst1.png}
 \end{center}
 
 On peut lire sur cette capture d'écran à la fois le temps de réponse à 5$\%$ et l'amplitude du premier dépassement. L'échelon atteint 1, tout comme la réponse indicielle donc l'erreur statique est nulle et le premier dépassement atteint 1.045, donc le premier dépassement dépasse de 4.5$\%$ le régime permanent. Le temps de réponse à 5$\%$ de ce système est de 86,8 ms.
 En comparaison, on attendait : $D_1 = 5\%$ et $t_{r5\%} = 89$ms. Cet écart peut s'expliquer par une mauvaise précision de lecture sur les abaques lors du calcul de $T_i$ pour avoir un premier dépassement à 5$\%$.
-\\\\\underline{\bf Conclusion :} Pour résumer, d'après toutes les simulations et calculs théoriques, on se rend compte que pour un correcteur proportionnel, plus sa valeur augmente, plus son erreur statique et son temps de réponse diminuent sans présenter de dépassement, alors que pour le correcteur intégral, son erreur statique est toujours nulle mais la FTBO du sytème devient un deuxième ordre donc la réponse indicielle contient des dépassement qui diminuent en amplitude si $T_i$ augmente mais alors le temps de réponse devient très grand (0.3 secondes pour $T_i = 10\tau$). Pour ce système, le correcteur proportionnel est meilleur que le correcteur intégral sans compter l'erreur statique (mais qui tend vers 0 lorsque K augmente). 
+\\Résumons ces données simulées dans un tableau : 
+\begin{center}
+    \begin{tabular}{ |p{1cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|}
+
+        \hline
+        $T_i$ & $t_{r5\%}$(ms)th.& $t_{r5\%}$(ms) sim. &$D_1 (\%)$ th. & $D_1 (\%) $ \\
+        \hline
+        $0.0756$& 89 & 86.8 & 5 & 4.5  \\
+        \hline
+        \end{tabular}
+    \end{center}
+
+\underline{\bf Conclusion :} Pour résumer, d'après toutes les simulations et calculs théoriques, on se rend compte que pour un correcteur proportionnel, plus sa valeur augmente, plus son erreur statique et son temps de réponse diminuent sans présenter de dépassement, alors que pour le correcteur intégral, son erreur statique est toujours nulle mais la FTBO du sytème devient un deuxième ordre donc la réponse indicielle contient des dépassement qui diminuent en amplitude si $T_i$ augmente mais alors le temps de réponse devient très grand (0.3 secondes pour $T_i = 10\tau$). Pour ce système, le correcteur proportionnel est meilleur que le correcteur intégral sans compter l'erreur statique (mais qui tend vers 0 lorsque K augmente). 
+\\En ce qui concerne la valeur de $T_i$ où la réponse indicielle présente un premier dépassement de 5$\%$, voici les valeurs trouvées : 
+
+
 \newpage \Large \textit{\textbf{Mise en oeuvre du correcteur intégral}}
-\\Nous allons désormais remplacer le correcteur proportionnel précédemment câblé par un intégrateur monté en série avec un inverseur et leurs montages sont :
+\\\normalsize Nous allons désormais remplacer le correcteur proportionnel précédemment câblé par un intégrateur monté en série avec un inverseur et leurs montages sont :
 \begin{figure}[!ht]
     \centering
     \includegraphics[width = 8 cm]{TP3/integrateur.png}
@@ -702,21 +731,58 @@ En comparaison, on attendait : $D_1 = 5\%$ et $t_{r5\%} = 89$ms. Cet écart peut
     \includegraphics[width = 8cm]{TP3/inverseur.png}
     \caption{\itshape Montage d'un inverseur}
 \end{figure}
-\normalsize Nous avons besoin d'un intégrateur non-inverseur or, la figure 1 représente un montage qui a comme fonction de transfert $\frac{V_s}{V_e} = -\frac{1}{RCj\omega}$. Il faut donc bien rajouter un amplificateur inverseur avec $R_2=R_1$ pour compenser la négativité de l'inverseur.
+\normalsize Nous avons besoin d'un intégrateur non-inverseur or, la figure 1 représente un montage qui a comme fonction de transfert $\frac{V_s}{V_e} = -\frac{1}{RCj\omega}$. Il faut donc bien rajouter un amplificateur inverseur (fig.2) avec $R_2=R_1$ pour compenser la négativité de l'inverseur.
 \begin{itemize}
-    \item \large $\mathbf{T_i = \tau = 0.0213}$
+    \item \large $\mathbf{T_i = \tau = 21.3}$ \bf ms
 \end{itemize}
 Expérimentalement, nous savons que $T_i = RC$, on cherche donc $T_i = 0.0213$. On prend $R=994 \Omega$ et $C = 22 \mu F$. On a alors $RC = 21.8$ms.
 Pour les résistances de l'inverseur, nous choisissons $R_1=R_2 = 5800 \Omega$. Voici les graphes obtenus : 
 
 \begin{center}
-    \includegraphics[width = 19 cm]{TP3/Syst_1/I/dep-syst1-ti=tau.png}
-    \includegraphics[width = 19 cm]{TP3/Syst_1/I/tr5prc-syst1-ti=tau1.png}
+    \includegraphics[width = 16 cm]{TP3/Syst_1/I/dep-syst1-ti=tau.png}
 \end{center}
-
-On constate tout de suite qu'on a bien une erreur statique nulle, comme c'était attendu, 
-
-
+On constate tout de suite qu'on a bien une erreur statique nulle, comme c'était attendu. L'amplitude du premier dépassement est de 30.31$\%$, sachant que d'après la simulation précédente, on attendait une amplitude de 28.2$\%$ soit 7.5$\%$ de plus que prévu. Cette erreur peut être expliquée par la légère différence (2$\%$) du $T_i$ expérimental et théorique.
+\begin{center}
+    \includegraphics[width = 16 cm]{TP3/Syst_1/I/tr5prc-syst1-ti=tau1.png}
+\end{center}
+On lit sur ce graphe que $t_{r5\%} = 121$ms et on attendait 123ms soit une erreur très faible qui peut provenir de l'imprécision de lecture sur l'oscilloscope.
+\begin{itemize}
+    \item \large $\mathbf{T_i = 5\tau = 106.5}$ \bf ms
+\end{itemize}
+Expérimentalement, nous savons que $T_i = RC$, on cherche donc $T_i = 0.1065$. On prend $R=14.8 \space k\Omega$ et $C = 6.6 \space \mu F$. On a alors $RC = 97.7$ms. Notre $T_i$ expérimental est 8$\%$ inférieur au $T_i$ théorique.
+Voici le graphe obtenu : 
+\begin{center}
+    \includegraphics[width = 16 cm]{TP3/Syst_1/I/tr5prc-syst1-ti=5tau.png}
+\end{center}
+On constate de même qu'on a bien une erreur statique nulle. Contrairement à la simulation, on ne voit pas de dépassement, et s'il y en avait, il serait difficile de le percevoir. La différence entre $T_{i_{exp}}$ et $T_{i_{th}}$ peut en être la cause. Cependant, cette différence n'a pas affecté le temps de réponse puisqu'on lit sur le graphe un temps de réponse à cinq pourcents de 127ms (le curseur X1 aurait dû être placé au début de l'échelon) et la valeur attendue était de 127.1 ms. 
+\newpage
+\begin{itemize}
+    \item \large $\mathbf{T_i = 10\tau = 213}$ \bf ms
+\end{itemize}
+Expérimentalement, nous savons que $T_i = RC$, on cherche donc $T_i = 0.213$. On prend $R=10 \space k\Omega$ et $C = 22\space \mu F$. On a alors $RC = 220$ms. Notre $T_i$ expérimental est 3$\%$ supérieur au $T_i$ théorique.
+Voici le graphe obtenu : 
+\begin{center}
+    \includegraphics[width = 16 cm]{TP3/Syst_1/I/tr5pc-syst1-ti=10tau.png}
+\end{center}
+Comme précédemment, l'erreur statique est toujours, il n'y a pas de dépassements, comme en simulation, et $t_{r5\%} = 302$ms (le curseur X1 aurait dû être placé au début de l'échelon). 
+\\\\\underline{\bf Conclusion :} Pour les trois différentes valeurs de $T_i$, les valeurs mesurées correspondaient et étaient très proches des valeurs simulées, ce qui confirme que le modèle utilisé est bon pour ce système et ce correcteur, contrairement au correcteur proportionnel où le modèle du premier ordre n'était plus statisfaisant après une certaine valeur de K.
+Enfin, les correcteurs proportionnel et intégral ont chacun leurs points forts et faibles : le correcteur proportionnel réduit le temps de réponse (de l'ordre de la milliseconde) et l'erreur statique mais ne peut plus être utilisé au-dessus d'une certaine valeur de K, car le modèle utilisé ne correspond plus à la réalité.
+\\De l'autre côté, le correcteur intégral est d'une extrême précision : son erreur statique est toujours nulle. En revanche, plus $T_i$ augmente, plus la réponse est lente (jusqu'à 300 ms), soit 300 fois plus lent que pour le correcteur proportionnel pour $T_i = 10\tau$ et $K = 27.2$.
+\newpage
+\begin{itemize}
+    \item \large $\mathbf{T_i = 75.6}$\bf ms pour $\mathbf{D_1 = 5\%}$.
+\end{itemize}
+Expérimentalement, nous savons que $T_i = RC$, on cherche donc $T_i = 0.0756$. On prend $R=11.8 \space k\Omega$ et $C = 6.6\space \mu F$. On a alors $RC = 77.9$ms. Notre $T_i$ expérimental est 3$\%$ supérieur au $T_i$ théorique.
+Voici le graphe obtenu : 
+\begin{center}
+    \includegraphics[width = 16 cm]{TP3/Syst_1/I/dep-syst1-ti=0.07788.png}
+\end{center}
+Premièrement, l'erreur statique est nulle, principale caractéristique d'un correcteur intégral.
+\\D'autre part, $D_1 = 3.4\%$ alors que la simulation avait donné $D_1 = 4.5$ soit un écart de 24$\%$. Cette différence est d'une part causée par la différence des valeurs de $T_{i_{exp}}$ et $T_{i{sim}}$, et par la difficulté de bien mesurer l'amplitude sur l'oscilloscope.
+\begin{center}
+    \includegraphics[width = 16 cm]{TP3/Syst_1/I/tr5-syst1-ti=0.07789.png}
+\end{center}
+\normalsize On mesure ci-dessus $t_{r5\%} = 98.5$ms alors qu'on attendait 89 ms d'après la simulation soit un écart de 10.7$\%$. Comme pour le premier dépassement, on a un écart assez conséquent entre la valeur simulée et la valeur expérimentale, qui est expliquée partiellement, comme précédemment par une valeur différente de $RC$. Une autre erreur peut provenir de l'imprécision des résistances, ou un mauvais contact sur notre platine d'essai, ou enfin une erreur dans nos calculs, notamment au niveau des arrondis.
 \subsection{\itshape Système 2}
 \subsubsection{\underline{\itshape \bf Correcteur proportionnel}}
 On considère dans un premier temps un correcteur proportionnel $C(p) = K > 0$ et le système 2 qui est modélisé par une fonction de transfert du deuxième ordre $T(s) = F_2(s) = \frac{A}{1 + 2z\frac{p}{\omega_0} + (\frac{p}{\omega_0})^2}$.
@@ -750,7 +816,6 @@ De même :
 On peut ainsi en déduire $z_{BF} = \frac{z}{\sqrt{1 + KA}} = \frac{0.5}{\sqrt{50}} \approx 0.07$. D'après les abaques, le premier dépassement sera de \fbox{$D_1 = 80\%$}.
 De plus, $\omega_{0_{BF}} = \omega_0\sqrt{1 + KA} = 44.6\sqrt{50} = 315.37$ rad.s$^{-1}$
 D'après les abaques, le temps de réponse réduit est : $t_{r5\%}\omega_{0_{BF}} = 40 \Leftrightarrow $\fbox{$t_{r5\%} = 126.8$ ms}.
-\newpage
 \normalsize Résumons ainsi ces calculs sous forme de tableau : 
 
 \begin{center}
@@ -776,20 +841,20 @@ pour les différentes simulations :
     \item \bf \large K = 4.5
 \end{itemize}
 \begin{center}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_2/Depass_4_1_K=4.5.png}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_2/tr5prct_4_1_K=4.5.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_2/Depass_4_1_K=4.5.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_2/tr5prct_4_1_K=4.5.png}
 \end{center}
     Sur le premier graphe, on peut déjà observer que l'erreur statique est bien de 10$\%$ : l'échelon atteint 1 et la réponse indicielle 0.9, on a bien 10$\%$ d'erreur statique.
     Pour l'amplitude du premier dépassement, on détermine déjà l'écart entre le régime permanent et le dépassement : $1.442 -0.9 = 0.542$. On divise ensuite ce nombre par 1$\%$ de 0.9 donc par 0.009.
     On a finalement $D_1 = \frac{0.542}{0.009} = 60.22\%$. Enfin, on peut voir le temps de réponse à 5$\%$ sur la deuxième capture : $t_{r5\%}$ = 136.44 ms.
-    Ainsi nos valeurs simulées sont plutôt proches les unes des autres (écart de 0.3$\%$ entre les valeurs des amplitudes du premier dépassement, écart nul entre les erreurs statiques et écart de 4$\%$ entre les temps de réponse). Toutes ces erreurs peuvent être dues à une imprécision des mesures sur les graphes des réponses indicielles mais comme ces erreurs ne sont pas grandes et cohérentes, le modèle est bon pour cette valeur de K.
-\newpage
+    Ainsi nos valeurs simulées sont plutôt proches les unes des autres (écart de 0.3$\%$ entre les valeurs des amplitudes du premier dépassement, écart nul entre les erreurs statiques et écart de 4$\%$ entre les temps de réponse). 
+    \\Toutes ces erreurs peuvent être dues à une imprécision des mesures sur les graphes des réponses indicielles mais comme ces erreurs ne sont pas grandes et cohérentes, le modèle est bon pour cette valeur de K.
 \begin{itemize}
     \item \bf \large K = 24.5
 \end{itemize}
 \begin{center}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_2/depassement_4_1_K=24.5.png}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_2/tr5prct_4.1_K=24.5.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_2/depassement_4_1_K=24.5.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_2/tr5prct_4.1_K=24.5.png}
 \end{center}
     Sur le premier graphe, on peut déjà observer que l'erreur statique est bien de 2$\%$ : l'échelon atteint 1 et la réponse indicielle 0.98, on a bien 2$\%$ d'erreur statique.
     Pour l'amplitude du premier dépassement, on détermine déjà l'écart entre le régime permanent et le dépassement : $1.765 -0.98 = 0.785$. On divise ensuite ce nombre par 1$\%$ de 0.98 donc par 0.0098.
@@ -812,7 +877,7 @@ Traçons désormais les réponses indicielles pour différentes valeurs de $T_i$
 \end{itemize}
 
 \begin{center}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_2/tr5prct_4.2_Ti=20_sur_omega0.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_2/tr5prct_4.2_Ti=20_sur_omega0.png}
 
 \end{center}
 On peut tout de suite remarquer que cette réponse indicielle n'admet pas de dépassements, qu'elle est bien au moins du deuxième ordre (tangente nulle à l'origine) et que l'erreur statique est nulle (elle l'est bien, il aurait fallu allonger la durée de simulation pour bien observer que la réponse tend vers 1).
@@ -826,7 +891,7 @@ On peut ensuite lire que $t_{r5\%} = 627.65$ms.
 \end{center}
 \normalsize On obtient alors :
 \begin{center}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_2/nichols_Ti=20_sur_omega0.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_2/nichols_Ti=20_sur_omega0.png}
 \end{center}
 On trouve comme marge de phase \fbox{$m_{\phi_{\frac{20}{\omega_0}}} = -128-(-180) = 52^{\circ}$}.
 \newpage
@@ -834,7 +899,7 @@ On trouve comme marge de phase \fbox{$m_{\phi_{\frac{20}{\omega_0}}} = -128-(-18
     \item \large $\mathbf{T_i = \frac{10}{\omega_0} = 0.2242}$
 \end{itemize}
 \begin{center}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_2/tr5prct_4.2_Ti=10_sur_omega0.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_2/tr5prct_4.2_Ti=10_sur_omega0.png}
 
 \end{center}
 On peut de nouveau remarquer que cette réponse indicielle n'admet pas de dépassements, qu'elle est bien au moins du deuxième ordre (tangente nulle à l'origine) et que l'erreur statique est nulle.
@@ -847,7 +912,7 @@ On peut ensuite lire que $t_{r5\%} = 288.10$ms.
 \newpage
 \normalsize On obtient alors :
 \begin{center}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_2/nichols_Ti=10_sur_omega0.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_2/nichols_Ti=10_sur_omega0.png}
 \end{center}
 On trouve comme marge de phase \fbox{$m_{\phi_{\frac{10}{\omega_0}}} = -102-(-180) = 78^{\circ}$}.
 \newpage
@@ -855,7 +920,7 @@ On trouve comme marge de phase \fbox{$m_{\phi_{\frac{10}{\omega_0}}} = -102-(-18
     \item \large $\mathbf{T_i = \frac{5}{\omega_0} = 0.112}$
 \end{itemize}
 \begin{center}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_2/tr5prct_et_depassement_4.2_5_sur_omega0.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_2/tr5prct_et_depassement_4.2_5_sur_omega0.png}
 
 \end{center}
 On remarque que la réponse admet désormais des dépassements, mais l'erreur staituqe est toujours nulle. Nous avons placé les curseurs de façon à pouvoir mesurer l'amplitude du premier dépassement et le temps de réponse à cinq pourcents.
@@ -868,7 +933,7 @@ On trouve ainsi $D_1 = 12.3\%$ et $t_{r5\%} = 227.2$ms.
 \newpage
 \normalsize On obtient alors :
 \begin{center}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_2/nichols_4.2_Ti=5_sur_omega0.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_2/nichols_4.2_Ti=5_sur_omega0.png}
 \end{center}
 On trouve comme marge de phase \fbox{$m_{\phi_{\frac{5}{\omega_0}}} = -118-(-180) = 62^{\circ}$}.
 \newpage
@@ -876,7 +941,7 @@ On trouve comme marge de phase \fbox{$m_{\phi_{\frac{5}{\omega_0}}} = -118-(-180
     \item \large $\mathbf{T_i = \frac{1}{\omega_0} = 0.02242}$
 \end{itemize}
 \begin{center}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_2/4.2_instable_Ti=1_sur_omega0.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_2/4.2_instable_Ti=1_sur_omega0.png}
 
 
 \end{center}
@@ -889,7 +954,7 @@ Pour cette valeur de $T_i$, le système est instable. On peut le confirmer en me
 \newpage
 \normalsize On obtient alors :
 \begin{center}
-    \includegraphics[width = 19 cm]{TP2 Simulink/Syst_2/nichols_4.2_Ti=1_sur_omega0.png}
+    \includegraphics[width = 16 cm]{TP2 Simulink/Syst_2/nichols_4.2_Ti=1_sur_omega0.png}
 \end{center}
 On trouve comme marge de phase \fbox{$m_{\phi_{\frac{1}{\omega_0}}} = -209-(-180) = -29^{\circ} < 0$}. Le système est donc bien instable.
 
